@@ -1,0 +1,6 @@
+# My First MarkDown Post!
+
+I am very excited for APCSP this year! Here are some of my goals:
+- Gain a better understanding of Python and programming languages
+- Learn how to work with other people and collaborate in projects
+- Learn how to work with an IDE (VSCode) and repositories (Github)
