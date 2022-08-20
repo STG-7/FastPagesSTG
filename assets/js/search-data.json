@@ -1,22 +1,11 @@
 {
   
-    
-        "post0": {
-            "title": "Firstmdpost",
-            "content": "My First MarkDown Post! . Goals for This Year: . Gain a better understanding of Python and programming languages | Learn how to work with other people and collaborate in projects | Learn how to work with an IDE (VSCode) and repositories (Github) | . Favorite Things: . Color: Black | Food: Sushi | Computing Device: Playstation | .",
-            "url": "https://stg-7.github.io/FastPagesSTG/2020/08/20/FirstMDPost.html",
-            "relUrl": "/2020/08/20/FirstMDPost.html",
-            "date": " • Aug 20, 2020"
-        }
-        
-    
-  
 
   
   
 
   
-      ,"page1": {
+      "page1": {
           "title": "About Me",
           "content": "Hello, my name is Shaurya Goel and I am an APCSP Student in Mr. Mortensen’s Period 4 class. .",
           "url": "https://stg-7.github.io/FastPagesSTG/about/",
