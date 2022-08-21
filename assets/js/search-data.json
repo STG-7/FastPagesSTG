@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "First Jupyter Notebook and Python Code",
-            "content": "Printing &quot;Hello World!&quot; Using Python . Hello World! .",
+            "content": "Printing &quot;Hello World!&quot; Using Python . print(&quot;Hello World!&quot;) . Hello World! .",
             "url": "https://stg-7.github.io/FastPagesSTG/2022/08/20/FirstJN.html",
             "relUrl": "/2022/08/20/FirstJN.html",
             "date": " • Aug 20, 2022"
