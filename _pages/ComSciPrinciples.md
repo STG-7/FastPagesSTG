@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Computer Science Principles
+title: APCSP
 permalink: /COMSCIPRINC/
 ---
 
