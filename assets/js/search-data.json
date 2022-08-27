@@ -39,6 +39,17 @@
 
   
       ,"page1": {
+          "title": "Computer Science Principles",
+          "content": "Hello, my name is Shaurya Goel and I am an APCSP Student in Mr. Mortensen’s Period 4 class. .",
+          "url": "https://stg-7.github.io/FastPagesSTG/COMSCIPRINC/",
+          "relUrl": "/COMSCIPRINC/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "Environmental Science",
           "content": "",
           "url": "https://stg-7.github.io/FastPagesSTG/ENVIRONSCI/",
@@ -49,7 +60,7 @@
   
 
   
-      ,"page2": {
+      ,"page3": {
           "title": "About Me",
           "content": "Hello, my name is Shaurya Goel and I am an APCSP Student in Mr. Mortensen’s Period 4 class. .",
           "url": "https://stg-7.github.io/FastPagesSTG/about/",
@@ -81,7 +92,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://stg-7.github.io/FastPagesSTG/robots.txt",
