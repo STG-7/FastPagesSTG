@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Environmental Science
+title: APES
 permalink: /ENVIRONSCI/
 ---
 
