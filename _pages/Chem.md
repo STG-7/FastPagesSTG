@@ -1,7 +1,7 @@
 
 ---
 layout: page
-title: About Me
+title: Chemistry
 permalink: /about/
 ---
 
