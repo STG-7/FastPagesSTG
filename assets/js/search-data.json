@@ -50,6 +50,17 @@
 
   
       ,"page2": {
+          "title": "Chemistry",
+          "content": "",
+          "url": "https://stg-7.github.io/FastPagesSTG/CHEM/",
+          "relUrl": "/CHEM/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "APCSP",
           "content": "Upcoming Homework: . Week 0 Notes: . Week 1 Notes: .",
           "url": "https://stg-7.github.io/FastPagesSTG/COMSCIPRINC/",
@@ -60,7 +71,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "APES",
           "content": "",
           "url": "https://stg-7.github.io/FastPagesSTG/ENVIRONSCI/",
@@ -71,7 +82,7 @@
   
 
   
-      ,"page4": {
+      ,"page5": {
           "title": "About Me",
           "content": "Hello, my name is Shaurya Goel and I am an APCSP Student in Mr. Mortensen’s Period 4 class. .",
           "url": "https://stg-7.github.io/FastPagesSTG/about/",
@@ -103,7 +114,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://stg-7.github.io/FastPagesSTG/robots.txt",
