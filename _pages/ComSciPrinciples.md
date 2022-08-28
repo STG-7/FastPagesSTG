@@ -1,6 +1,6 @@
 ---
 layout: page
-title: APCSP
+title: ComSci Principles
 permalink: /COMSCIPRINC/
 ---
 
