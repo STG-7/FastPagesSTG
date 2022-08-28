@@ -6,18 +6,11 @@ permalink: /COMSCIPRINC/
 ### Upcoming Homework/Assignments:
 | Homework           |    Time   |   Due Date  |   
 | :---               |   :----:  |     ---:    |  
-| Canvas Week 1      | 1-3 hours |   8/29/2022 | 
+| Canvas Week 1      | 2-3 hours |   8/29      |   
+| Alumini Panel      | 1-2 hours | 10 PM 8/29  | 
                        
                        
-                       
-- Comment on partner's site 
--  Create notebook through Python kernel
-- Use python for hacks
-- Productive blogging
-- Create notebook using Bash + blog it                       
-                       
-
-
+                      
 Week 0 Notes:
 
 
