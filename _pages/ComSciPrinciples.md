@@ -3,13 +3,19 @@ layout: page
 title: ComSci Principles
 permalink: /COMSCIPRINC/
 ---
-| Homework    | Description |    Time    |  | Due Date  |   
-| :---        |    :----:   |     :----: |  |   ---:    |  
-| Header      | Title       | Here's this|  | Header    | 
-| Paragraph   | Text        | And more   |  | Paragraph | 
-| Header      | Title       | Here's this|  | Header    |
-| Header      | Title       | Here's this|  | Header    |
-| Header      | Title       | Here's this|  | Header    |
+### Upcoming Homework/Assignments:
+| Homework           |    Time   |   Due Date  |   
+| :---               |   :----:  |     ---:    |  
+| Canvas Week 1      | 1-3 hours |     8/29    | 
+                       
+                       
+                       
+- Comment on partner's site 
+-  Create notebook through Python kernel
+- Use python for hacks
+- Productive blogging
+- Create notebook using Bash + blog it                       
+                       
 
 
 Week 0 Notes:
