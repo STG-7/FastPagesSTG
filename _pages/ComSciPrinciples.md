@@ -3,7 +3,7 @@ layout: page
 toc: true
 title: ComSci Principles
 permalink: /COMSCIPRINC/
-categories: [markdown] 
+markdown: redcarpet
 comments: true
 ---
 
