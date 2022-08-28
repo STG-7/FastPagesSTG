@@ -3,8 +3,14 @@ layout: page
 title: ComSci Principles
 permalink: /COMSCIPRINC/
 ---
+| Homework    | Description |    Time    |  | Due Date  |   
+| :---        |    :----:   |     :----: |  |   ---:    |  
+| Header      | Title       | Here's this|  | Header    | 
+| Paragraph   | Text        | And more   |  | Paragraph | 
+| Header      | Title       | Here's this|  | Header    |
+| Header      | Title       | Here's this|  | Header    |
+| Header      | Title       | Here's this|  | Header    |
 
-Upcoming Homework:
 
 Week 0 Notes:
 
