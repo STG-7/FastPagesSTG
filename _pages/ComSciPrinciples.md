@@ -1,9 +1,7 @@
 ---
 layout: page
-toc: true
 title: ComSci Principles
 permalink: /COMSCIPRINC/
-comments: true
 ---
 
 
