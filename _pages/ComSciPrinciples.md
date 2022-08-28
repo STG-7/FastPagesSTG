@@ -6,7 +6,7 @@ permalink: /COMSCIPRINC/
 ### Upcoming Homework/Assignments:
 | Homework           |    Time   |   Due Date  |   
 | :---               |   :----:  |     ---:    |  
-| Canvas Week 1      | 1-3 hours |     8/29    | 
+| Canvas Week 1      | 1-3 hours |   8/29/2022 | 
                        
                        
                        
