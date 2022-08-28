@@ -6,10 +6,10 @@ permalink: /CHEM/
 
 
 ### Upcoming Homework/Assignments:
-| Homework           |    Time   |   Due Date  |   
-| :---               |   :----:  |     ---:    |  
-| Lab Storyboard     | 1-2 hours |   8/29      |   
-| Lab Write-up       | 3-4 hours |             | 
-| Stoich Test        |           |             | 
+| Upcoming           |    Time   |   Due Date  |   Type          |
+| :---               |   :----:  |     :----:  |  ---:           |
+| Lab Storyboard     | 1-2 hours |   8/29      |   Homework      |
+| Lab Write-up       | 3-4 hours |             |   Homework      |
+| Stoich Test        |           |             |   Test          |
 
 
