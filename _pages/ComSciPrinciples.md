@@ -11,7 +11,6 @@ permalink: /COMSCIPRINC/
                        
                        
                       
-Week 0 Notes:
 
-
-Week 1 Notes:
+Week 1 Notes and Vocab:
+- 
