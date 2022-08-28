@@ -3,7 +3,6 @@ layout: page
 toc: true
 title: ComSci Principles
 permalink: /COMSCIPRINC/
-markdown: redcarpet
 comments: true
 ---
 
@@ -13,7 +12,11 @@ comments: true
 | :---               |   :----:  |     :----:  |  ---:                |
 | Canvas Week 1      | 2-3 hours |   8/29      |   Homework           |
 | Alumini Panel      | 1-2 hours | 10 PM 8/29  |   Classwork/Homework |
-                       
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      
                        
                       
 
