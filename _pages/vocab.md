@@ -1,3 +1,8 @@
+---
+layout: page
+title: Vocab
+permalink: /VOCAB/
+---
 
 ### Vocab:
 - pseudo code: a notation resembling a simplified programming language, used in program design.
