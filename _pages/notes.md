@@ -1,4 +1,8 @@
-
+---
+layout: page
+title: Notes
+permalink: /NOTES/
+---
 ### Python:
 - "def" is a key word in Python that defines a function
 - String concatenation "+" is the operation of joining character strings end-to-end
