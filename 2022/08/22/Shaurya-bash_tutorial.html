@@ -85,7 +85,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -127,7 +127,8 @@ window.onload = wrap_img;
 <a href="#My-Hacks">My Hacks </a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#Workspace-setup">Workspace setup </a></li>
-<li class="toc-entry toc-h4"><a href="#Environment-Setup">Environment Setup </a></li>
+<li class="toc-entry toc-h4"><a href="#Environment-Validation">Environment Validation </a></li>
+<li class="toc-entry toc-h4"><a href="#Verifying-tools-using-conda">Verifying tools using conda </a></li>
 </ul>
 </li>
 </ul>
@@ -268,8 +269,8 @@ Project /home/shaurya/vscode/FastPagesSTG updated successfully.
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Environment-Setup">
-<a class="anchor" href="#Environment-Setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environment Setup<a class="anchor-link" href="#Environment-Setup"> </a>
+<h4 id="Environment-Validation">
+<a class="anchor" href="#Environment-Validation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environment Validation<a class="anchor-link" href="#Environment-Validation"> </a>
 </h4>
 <ul>
 <li>Automate checking if I have following kernels<ul>
@@ -342,6 +343,104 @@ jupyter kernelspec list <span class="p">|</span> awk <span class="s1">'{print $1
 <pre>Javascript Kernel Exists
 Python Kernel Exists
 Bash Kernel Exists
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Verifying-tools-using-conda">
+<a class="anchor" href="#Verifying-tools-using-conda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verifying tools using conda<a class="anchor-link" href="#Verifying-tools-using-conda"> </a>
+</h4>
+<ul>
+<li>Automate checking if I have following kernels<ul>
+<li>Javascript</li>
+<li>Python3</li>
+<li>Bash</li>
+<li>Ipykernel</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nv">package_list</span><span class="o">=</span>/tmp/packagelist.txt
+<span class="k">if</span> <span class="o">[[</span> ! -f <span class="nv">$package_list</span> <span class="o">]]</span>
+<span class="k">then</span>
+        conda list -n base &gt; <span class="nv">$package_list</span>
+<span class="k">fi</span>
+
+<span class="nv">python_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "python" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$python_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
+<span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">"Python not installed"</span>
+<span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">"Python installed with version </span><span class="nv">$python_ver</span><span class="s2">"</span>
+<span class="k">fi</span>
+
+<span class="nv">ipykernel_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "ipykernel" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$ipykernel_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
+<span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">"ipykernel not installed"</span>
+<span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">"ipykernel installed with version </span><span class="nv">$ipykernel_ver</span><span class="s2">"</span>
+<span class="k">fi</span>
+
+<span class="nv">conda_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "conda" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$conda_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
+<span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">"conda not installed"</span>
+<span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">"conda installed with version </span><span class="nv">$conda_ver</span><span class="s2">"</span>
+<span class="k">fi</span>
+
+<span class="nv">bash_kernel_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "bash-kernel" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$bash_kernel_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
+<span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">"bash-kernel not installed"</span>
+<span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">"bash-kernel installed with version </span><span class="nv">$bash_kernel_ver</span><span class="s2">"</span>
+<span class="k">fi</span>
+
+<span class="nv">jupyter_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "jupyter" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$jupyter_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
+<span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">"jupyter not installed"</span>
+<span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">"jupyter installed with version </span><span class="nv">$jupyter_ver</span><span class="s2">"</span>
+<span class="k">fi</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python installed with version 3.9.12
+ipykernel installed with version 6.9.1
+conda installed with version 4.13.0
+bash-kernel installed with version 0.7.2
+jupyter installed with version 1.0.0
 </pre>
 </div>
 </div>
