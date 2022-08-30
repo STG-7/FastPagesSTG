@@ -23,6 +23,7 @@ comments: true
 - Focus on your own path
 - Ignore clashing egos with colleagues and peers
 - Have a better mindset to learn instead of just trying to get stuff down
+- Logical thinking background helped Alumini with Coding and solving problems
 
 ### Are there any PBL scenarios in college computer science classes?
 - In college there are 2 of them, 1 in senior year 
