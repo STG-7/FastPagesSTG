@@ -48,7 +48,7 @@ Alumini personal experience in Internships:
 - Alumuni did Internships in Northrop Grumman 
 - Alumini did internships in a company doing APIs and web development
 
-<img src="https://cdn.freebiesupply.com/logos/large/2x/northrop-grumman-1-logo-png-transparent.png" width = "250" alt = "NG">
+<img src="https://cdn.freebiesupply.com/logos/large/2x/northrop-grumman-1-logo-png-transparent.png" width = "500" alt = "NG">
 
 
 ### Additonal Information on Internships and Future Jobs
