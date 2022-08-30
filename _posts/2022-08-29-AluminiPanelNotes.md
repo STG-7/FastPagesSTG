@@ -25,10 +25,6 @@ comments: true
 - Logic/Algorithmic problemsolving is more important than knowledge of syntax
 - Logical thinking background helped Alumini with Coding and solving problems
 
-### Are there any PBL scenarios in college computer science classes?
-- In college there are 2 of them, 1 in senior year 
-- In college there are some project based learning classes and some theory based classes
-- There are a lot of PBL exams which are fixed for computer science courses
 
 ### Group Based Work in College
 - There are a lot of group based assignments in college
@@ -67,6 +63,12 @@ Alumini personal experience in Internships:
 - Doing 2 or 3 personal projects will help out with applying for internships and jobs
 - Alumini did a lot of work in data application
 - Alumini joined a club called Trident A in UCSD
+
+
+### Are there any PBL scenarios in college computer science classes?
+- In college there are 2 of them, 1 in senior year 
+- In college there are some project based learning classes and some theory based classes
+- There are a lot of PBL exams which are fixed for computer science courses
  
 
 
