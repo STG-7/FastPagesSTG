@@ -1,5 +1,4 @@
 ---
-toc: true
 layout: post
 description: Notes from 8/29 Alumini Panel Meeting
 categories: [markdown]
@@ -22,7 +21,8 @@ comments: true
 ### General Tips in Computer Science
 - Focus on your own path
 - Ignore clashing egos with colleagues and peers
-- Have a better mindset to learn instead of just trying to get stuff down
+- Have a better mindset to learn instead of just trying to get stuff down (Taking shortcuts does not help!)
+- Logic/Algorithmic problemsolving is more important than knowledge of syntax
 - Logical thinking background helped Alumini with Coding and solving problems
 
 ### Are there any PBL scenarios in college computer science classes?
@@ -37,13 +37,24 @@ comments: true
 
 ### Applying for Computer Science even if you are not majoring in it
 - Computer science can be used for optimization in other fields 
-- Computer science can help with high level math
-- A lot of requirements in statistics courses and psychology courses need some type of Computer Science background
+   - Mechanical Engineering
+   - Cognitive Science
+   - Aerospace
+   - 3D Printing
+   - Statistics (Code in R)
+- Computer science can also help with high level math
 - Programming is in almost every field.
 
-### Internships and Future Jobs
+### Internships
 - Getting internships and talking to professors will help get better jobs
+
+Tips for getting internships:
 - Have an outstanding resume that seperates you from everyone else
+   - Linkedin, Portfolio websites
+- Know when to apply
+    - Dates to apply, deadlines, etc.
+- Networking
+     - other people/engineers that are currently in the job
 
 Alumini personal experience in Internships:
 - Alumuni did Internships in Northrop Grumman 
