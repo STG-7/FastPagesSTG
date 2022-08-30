@@ -46,6 +46,7 @@ Alumini personal experience in Internships:
 - Internships in Northrop Grumman 
 - Internships in a company doing APIs and web development
 
+
 - Doing 2 or 3 personal projects will help out with applying for internships and jobs
 - Alumini did a lot of work in data application
 - Alumini joined a club called Trident A in UCSD
