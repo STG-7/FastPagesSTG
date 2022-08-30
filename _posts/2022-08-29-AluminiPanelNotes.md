@@ -34,7 +34,7 @@ comments: true
 - Managing your group is very important to your success
 - Some of the alumini got used for doing too much group work, be mindful on how you split your work amongst colleagues and peers
 
-### Applying for Computer Science even if you are not majoring in Computer Science
+### Applying for Computer Science even if you are not majoring in it
 - Computer science can be used for optimization in other fields 
 - Computer science can help with high level math
 - A lot of requirements in statistics courses and psychology courses need some type of Computer Science background
