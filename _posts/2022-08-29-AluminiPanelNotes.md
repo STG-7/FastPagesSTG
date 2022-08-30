@@ -33,6 +33,13 @@ comments: true
 - Managing your group is very important to your success
 - Some of the alumini got used for doing too much group work, be mindful on how you split your work amongst colleagues and peers
 
+
+### Are there any PBL scenarios in college computer science classes?
+- In college there are 2 of them, 1 in senior year 
+- In college there are some project based learning classes and some theory based classes
+- There are a lot of PBL exams which are fixed for computer science courses
+
+
 ### Applying for Computer Science even if you are not majoring in it
 - Computer science can be used for optimization in other fields 
    - Mechanical Engineering
@@ -42,6 +49,7 @@ comments: true
    - Statistics (Code in R)
 - Computer science can also help with high level math
 - Programming is in almost every field.
+
 
 ### Internships
 - Getting internships and talking to professors will help get better jobs
@@ -60,21 +68,15 @@ Alumini personal experience in Internships:
 
 <img src="https://cdn.freebiesupply.com/logos/large/2x/northrop-grumman-1-logo-png-transparent.png" width = "500" alt = "NG">
 
-
 ### Additonal Information on Internships and Future Jobs
 - Doing 2 or 3 personal projects will help out with applying for internships and jobs
 - Alumini did a lot of work in data application
 - Alumini joined a club called Trident A in UCSD
 
 
-### Are there any PBL scenarios in college computer science classes?
-- In college there are 2 of them, 1 in senior year 
-- In college there are some project based learning classes and some theory based classes
-- There are a lot of PBL exams which are fixed for computer science courses
 
 
-### To Wrap it Up
-I am very glad that I spent time after school today to listen to the aulumini panel. They further motivated my passion towards computer science and also gave very helpful tips that would help me later down the road. Also, through the alumini's personal experiences I learned a lot of lessons that can be utilized when the time comes for me.
+
  
 
 
