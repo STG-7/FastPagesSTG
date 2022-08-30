@@ -44,7 +44,7 @@ comments: true
 
 Alumini personal experience in Internships:
 - Alumuni did Internships in Northrop Grumman 
-- Alumini did nternships in a company doing APIs and web development
+- Alumini did internships in a company doing APIs and web development
 
 
 ### Addiional Information on Internships and Future Jobs
