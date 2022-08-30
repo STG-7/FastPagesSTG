@@ -17,7 +17,7 @@ comments: true
    - You also may get demotivated because of people being ahead of you
 - Getting started, coding is very difficult
 
-### Tips in Computer Science
+### General Tips in Computer Science
 - Focus on your own path
 - Ignore clashing egos with colleagues and peers
 - Have a better mindset to learn instead of just trying to get stuff down
@@ -26,7 +26,35 @@ comments: true
 - There are 2 of them, 1 in senior year 
 - In college there are project based learning classes and some theory based classes
 - There are a lot of PBL exams which are fixed for computer science classes
-- A lot of group based and managing group. Becafefjl of getting used for doing too much group work.
+
+### Group Based Work in College
+- A lot of group based assignments in college
+- Managing your group is very important
+- Be careful of getting used for doing too much group work
+
+### Applying for Computer Science even if you are not majoring in Computer Science
+- Computer science can be used for optimization in other fields 
+- Computer science can help with high level math
+- A lot of requirements in statistics courses and psychology courses need some type of Computer Science background
+- Programming is in almost every field.
+
+### Internships and Future Jobs
+- Getting internships and talking to professors will help get better jobs
+- Have an outstanding resume that seperates you from everyone else
+
+Alumini personal experience in Internships:
+- Internships in Northrop Grumman 
+- Internships in a company doing APIs and web development
+
+- Doing 2 or 3 personal projects will help out with applying for internships and jobs
+- Alumini did a lot of work in data application
+- Alumini joined a club called Trident A in UCSD
+ 
+
+
+
+
+
 
 
 
