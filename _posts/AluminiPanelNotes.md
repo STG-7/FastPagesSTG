@@ -25,7 +25,7 @@ comments: true
 ### Are there any PBL scenarios in college computer science classes?
 - In college there are 2 of them, 1 in senior year 
 - In college there are some project based learning classes and some theory based classes
-- There are a lot of PBL exams which are fixed for computer science classes
+- There are a lot of PBL exams which are fixed for computer science courses
 
 ### Group Based Work in College
 - A lot of group based assignments in college
