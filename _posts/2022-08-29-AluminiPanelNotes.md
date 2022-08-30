@@ -12,7 +12,7 @@ comments: true
 
 ### Biggest Challenges in Computer Science
 - Staying motivated
-   - You may get demotivated because of problems and setbacks during the journey to become an engineer/scientist
+   - You may get demotivated because of problems and setbacks during the learning journey
    - You also may get demotivated because of people being ahead of you
 - Getting started, coding is very difficult
 
