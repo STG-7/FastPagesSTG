@@ -17,6 +17,8 @@ comments: true
    - You also may get demotivated because of people being ahead of you
 - Getting started, coding is very difficult
 
+<img src="https://www.pngall.com/wp-content/uploads/5/Python-PNG-HD-Image.png" width = "250" alt = "Python">
+
 ### General Tips in Computer Science
 - Focus on your own path
 - Ignore clashing egos with colleagues and peers
@@ -45,6 +47,8 @@ comments: true
 Alumini personal experience in Internships:
 - Alumuni did Internships in Northrop Grumman 
 - Alumini did internships in a company doing APIs and web development
+
+<img src="https://cdn.freebiesupply.com/logos/large/2x/northrop-grumman-1-logo-png-transparent.png" width = "250" alt = "NG">
 
 
 ### Additonal Information on Internships and Future Jobs
