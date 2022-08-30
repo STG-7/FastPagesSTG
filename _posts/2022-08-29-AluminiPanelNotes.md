@@ -8,7 +8,7 @@ comments: true
 
 ### Background Info on Alumini 
 - Some of the aulumini graduated to UCs
-- Most of them are majoring or have some sort of knowledge and background in computer science
+- Most of them are majoring or have some sort of knowledge and background in Computer Science
 
 ### Biggest Challenges in Computer Science
 - Staying motivated
