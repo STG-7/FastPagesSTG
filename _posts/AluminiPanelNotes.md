@@ -43,10 +43,11 @@ comments: true
 - Have an outstanding resume that seperates you from everyone else
 
 Alumini personal experience in Internships:
-- Internships in Northrop Grumman 
-- Internships in a company doing APIs and web development
+- Alumuni did Internships in Northrop Grumman 
+- Alumini did nternships in a company doing APIs and web development
 
 
+### Addiional Information on Internships and Furuter Jobs
 - Doing 2 or 3 personal projects will help out with applying for internships and jobs
 - Alumini did a lot of work in data application
 - Alumini joined a club called Trident A in UCSD
