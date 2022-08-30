@@ -6,6 +6,8 @@ title: Alumini Panel Extra Credit Assignment
 comments: true
 ---
 
+# Important Insights and Takeaways from the event
+
 ### Background Info on Alumini 
 - Some of the aulumini graduated to UCs
 - Most of them are majoring or have some sort of knowledge and background in Computer Science
@@ -69,6 +71,10 @@ Alumini personal experience in Internships:
 - In college there are 2 of them, 1 in senior year 
 - In college there are some project based learning classes and some theory based classes
 - There are a lot of PBL exams which are fixed for computer science courses
+
+
+### To Wrap it Up
+I am very glad that I spent time after school today to listen to the aulumini panel. They further motivated my passion towards computer science and also gave very helpful tips that would help me later down the road. Also, through the alumini's personal experiences I learned a lot of lessons that can be utilized when the time comes for me.
  
 
 
