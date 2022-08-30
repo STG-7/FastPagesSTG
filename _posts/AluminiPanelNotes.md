@@ -47,7 +47,7 @@ Alumini personal experience in Internships:
 - Alumini did nternships in a company doing APIs and web development
 
 
-### Addiional Information on Internships and Furuter Jobs
+### Addiional Information on Internships and Future Jobs
 - Doing 2 or 3 personal projects will help out with applying for internships and jobs
 - Alumini did a lot of work in data application
 - Alumini joined a club called Trident A in UCSD
