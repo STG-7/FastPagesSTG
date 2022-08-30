@@ -23,7 +23,7 @@ comments: true
 - Have a better mindset to learn instead of just trying to get stuff down
 
 ### Are there any PBL scenarios in college computer science classes?
-- There are 2 of them, 1 in senior year 
+- In college There are 2 of them, 1 in senior year 
 - In college there are project based learning classes and some theory based classes
 - There are a lot of PBL exams which are fixed for computer science classes
 
