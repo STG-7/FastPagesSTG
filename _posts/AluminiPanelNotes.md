@@ -28,9 +28,9 @@ comments: true
 - There are a lot of PBL exams which are fixed for computer science courses
 
 ### Group Based Work in College
-- A lot of group based assignments in college
-- Managing your group is very important
-- Be careful of getting used for doing too much group work
+- There are a lot of group based assignments in college
+- Managing your group is very important to your success
+- Some of the alumini got used for doing too much group work, be mindful on how you split your work amongst colleagues and peers
 
 ### Applying for Computer Science even if you are not majoring in Computer Science
 - Computer science can be used for optimization in other fields 
