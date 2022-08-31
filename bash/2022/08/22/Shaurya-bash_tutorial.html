@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Shaurya Goel’s BASH Tutorial Hacks | Shaurya Goel’s fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Shaurya Goel’s BASH Tutorial Hacks" />
@@ -20,60 +21,58 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-22T00:00:00-05:00","datePublished":"2022-08-22T00:00:00-05:00","description":"Checks is required tools are installed and creates directory structure, and clones / pulls lastest changes from github","headline":"Shaurya Goel’s BASH Tutorial Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://stg-7.github.io/FastPagesSTG/bash/2022/08/22/Shaurya-bash_tutorial.html"},"url":"https://stg-7.github.io/FastPagesSTG/bash/2022/08/22/Shaurya-bash_tutorial.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/FastPagesSTG/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stg-7.github.io/FastPagesSTG/feed.xml" title="Shaurya Goel's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/FastPagesSTG/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-<script>
-function wrap_img(fn) {
-    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-        var elements = document.querySelectorAll(".post img");
-        Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title") && (el.className != "emoji")) {
-                const caption = document.createElement('figcaption');
-                var node = document.createTextNode(el.getAttribute("title"));
-                caption.appendChild(node);
-                const wrapper = document.createElement('figure');
-                wrapper.className = 'image';
-                el.parentNode.insertBefore(wrapper, el);
-                el.parentNode.removeChild(el);
-                wrapper.appendChild(el);
-                wrapper.appendChild(caption);
-            }
-        });
-    } else { document.addEventListener('DOMContentLoaded', fn); }
-}
-window.onload = wrap_img;
-</script>
+    <link rel="stylesheet" href="/FastPagesSTG/assets/css/style.css?v=">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/FastPagesSTG/assets/js/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/FastPagesSTG/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-<script>
-    document.addEventListener("DOMContentLoaded", function(){
-    // add link icon to anchor tags
-    var elem = document.querySelectorAll(".anchor-link")
-    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
-    });
-</script>
-</head>
-<body><header class="site-header">
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
 
-  <div class="wrapper">
-<a class="site-title" rel="author" href="/FastPagesSTG/">Shaurya Goel's fastpages</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger">
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewbox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
-            </svg>
-          </span>
-        </label>
 
-        <div class="trigger">
-<a class="page-link" href="/FastPagesSTG/CALCAB/">Calculus</a><a class="page-link" href="/FastPagesSTG/CHEM/">Chemistry</a><a class="page-link" href="/FastPagesSTG/COMSCIPRINC/">ComSci Principles</a><a class="page-link" href="/FastPagesSTG/ENVIRONSCI/">Environmental Science</a><a class="page-link" href="/FastPagesSTG/about/">About Me</a><a class="page-link" href="/FastPagesSTG/NOTES/">Notes</a><a class="page-link" href="/FastPagesSTG/search/">Search</a><a class="page-link" href="/FastPagesSTG/categories/">Tags</a><a class="page-link" href="/FastPagesSTG/VOCAB/">Vocab</a>
-</div>
-      </nav>
-</div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/FastPagesSTG/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <ul>
+            <li class="fork"><a href="">View On GitHub</a></li>
+            
+          </ul>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Shaurya Goel's fastpages</h1>
+          <p>An APCSP Student</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href=""></a></span>
+          <span class="credits right">Hosted on GitHub Pages — Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+        </div>
+
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -466,37 +465,9 @@ jupyter installed with version 1.0.0
 <a class="u-url" href="/FastPagesSTG/bash/2022/08/22/Shaurya-bash_tutorial.html" hidden></a>
 </article>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/FastPagesSTG/"></data>
 
-  <div class="wrapper">
+      </section>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="/FastPagesSTG/feed.xml">
-            <svg class="svg-icon orange">
-              <use xlink:href="/FastPagesSTG/assets/minima-social-icons.svg#rss"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-      </div>
-      <div class="footer-col">
-        <p>An APCSP Student</p>
-      </div>
     </div>
-
-    <div class="social-links">
-<ul class="social-media-list">
-<li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/FastPagesSTG/assets/minima-social-icons.svg#github"></use></svg></a></li>
-<li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/FastPagesSTG/assets/minima-social-icons.svg#twitter"></use></svg></a></li>
-</ul>
-</div>
-
-  </div>
-
-</footer>
-</body>
-
+  </body>
 </html>
