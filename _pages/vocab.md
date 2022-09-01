@@ -2,6 +2,7 @@
 layout: page
 title: Vocab
 permalink: /VOCAB/
+categories: [Year Round]
 ---
 
 ### Vocab:
