@@ -14,4 +14,4 @@ permalink: /TIMETABLE/
 | 3    | Homework  |
 | 2    | Homework  | 
 | 1    | Homework  | 
-| 0    | [MD Post](https://stg-7.github.io/FastPagesSTG/week%200/2022/08/20/FirstMD.html) [Python Hello](https://stg-7.github.io/FastPagesSTG/week%200/2022/08/20/FirstJN.html)  | 
+| 0    | [MD Post](https://stg-7.github.io/FastPagesSTG/week%200/2022/08/20/FirstMD.html),  [Python - Printing Hello](https://stg-7.github.io/FastPagesSTG/week%200/2022/08/20/FirstJN.html)  | 
