@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "HTML Hacks",
-            "content": "Hacks for HTML . Changing remote theme temporarily . Changed value for key remote_theme: . . Change to fastpages site: . . Main problems when switching the theme: . Files under the the _pages no longer appear, this includes: search tags .",
+            "content": "Hacks for HTML . Changing remote theme temporarily . Changed value for key remote_theme: . . Change to fastpages site: . . Main problems when switching the theme: . Files under the the _pages no longer appear, this includes: search | tags | . | .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%202/2022/08/31/HTMLHacks.html",
             "relUrl": "/week%202/2022/08/31/HTMLHacks.html",
             "date": " • Aug 31, 2022"
