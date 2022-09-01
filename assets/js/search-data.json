@@ -127,6 +127,17 @@
 
   
       ,"page6": {
+          "title": "Time Table",
+          "content": "Assignments: . Week Assignments . 6 | [MD Post]((https://stg-7.github.io/FastPagesSTG/week%200/2022/08/20/FirstMD.html) | . 5 | Homework | . 4 | Homework | . 3 | Homework | . 2 | Homework | . 1 | Homework | . 0 | [MD Post]((https://stg-7.github.io/FastPagesSTG/week%200/2022/08/20/FirstMD.html) Python Hello | .",
+          "url": "https://stg-7.github.io/FastPagesSTG/TIMETABLE/",
+          "relUrl": "/TIMETABLE/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page7": {
           "title": "About Me",
           "content": "Hello, my name is Shaurya Goel and I am an APCSP Student in Mr. Mortensen’s Period 4 class. .",
           "url": "https://stg-7.github.io/FastPagesSTG/about/",
@@ -139,7 +150,7 @@
   
 
   
-      ,"page8": {
+      ,"page9": {
           "title": "Notes",
           "content": "Python: . “def” is a key word in Python that defines a function | String concatenation “+” is the operation of joining character strings end-to-end | “import” is a key word in Python that imports libraries of functions that have previously been created | an “if” expression is evaluated for true or false true takes branch of code directly under if | false takes branch of code directly under else command | . | .",
           "url": "https://stg-7.github.io/FastPagesSTG/NOTES/",
@@ -160,7 +171,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "Vocab",
           "content": "Vocab: . pseudo code: a notation resembling a simplified programming language, used in program design. | Markdown: Markdown is a lightweight markup language for creating formatted text using a plain-text editor. | Jupytr Notebook: The Jupyter Notebook is a web-based interactive computing platform. | Python: Python is a high-level, interpreted, general-purpose programming language. | .",
           "url": "https://stg-7.github.io/FastPagesSTG/VOCAB/",
@@ -180,7 +191,7 @@
   
 
   
-      ,"page17": {
+      ,"page18": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://stg-7.github.io/FastPagesSTG/robots.txt",
