@@ -2,6 +2,7 @@
 layout: page
 title: Calculus
 permalink: /CALCAB/
+categories: [Week 1]
 ---
 
 ### Upcoming Homework/Assignments:

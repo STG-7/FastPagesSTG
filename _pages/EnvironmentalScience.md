@@ -2,6 +2,7 @@
 layout: page
 title: Environmental Science
 permalink: /ENVIRONSCI/
+categories: [Week 1]
 ---
 
 

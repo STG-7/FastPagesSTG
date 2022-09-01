@@ -2,6 +2,7 @@
 layout: page
 title: Chemistry
 permalink: /CHEM/
+categories: [Week 1]
 ---
 
 

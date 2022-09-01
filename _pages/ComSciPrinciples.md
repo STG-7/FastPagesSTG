@@ -2,6 +2,7 @@
 layout: page
 title: ComSci Principles
 permalink: /COMSCIPRINC/
+categories: [Week 1]
 ---
 
 

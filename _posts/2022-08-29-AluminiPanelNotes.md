@@ -1,7 +1,7 @@
 ---
 layout: post
 description: Notes from 8/29 Alumini Panel Meeting
-categories: [markdown]
+categories: [Week 1]
 title: Alumini Panel Extra Credit Assignment
 comments: true
 ---

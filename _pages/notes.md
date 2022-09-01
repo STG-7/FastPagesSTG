@@ -2,6 +2,7 @@
 layout: page
 title: Notes
 permalink: /NOTES/
+categories: [Year Round]
 ---
 ### Python:
 - "def" is a key word in Python that defines a function
