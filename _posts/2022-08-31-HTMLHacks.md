@@ -23,6 +23,6 @@ Change to fastpages site:
 
 Main problems when switching the theme:
 
-Files under the the _pages no longer appear, this includes:
-search
-tags
+- Files under the the _pages no longer appear, this includes:
+    - search
+    - tags
