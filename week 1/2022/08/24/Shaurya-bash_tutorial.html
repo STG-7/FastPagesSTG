@@ -195,58 +195,58 @@ Running this will ensure I have latest changes</li>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">"Setting up local folders and checking out repository"</span>
-git config --global user.email shauryaggamer@gmail.com
-git config --global user.name STG-7
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">"Setting up local folders and checking out repository"</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">shauryaggamer</span><span class="nd">@gmail</span><span class="o">.</span><span class="n">com</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="n">STG</span><span class="o">-</span><span class="mi">7</span>
 
 <span class="c1"># Variable section</span>
-<span class="nb">export</span> <span class="nv">home_dir</span><span class="o">=</span>/home/shaurya <span class="c1"># this is only needed since there is an issue with my home dir right now</span>
-<span class="nb">export</span> <span class="nv">workspace_dir</span><span class="o">=</span>/home/shaurya/vscode  <span class="c1"># setting project directory to /home/shaurya</span>
-<span class="nb">export</span> <span class="nv">apcsp</span><span class="o">=</span><span class="nv">$workspace_dir</span>/APCSP  <span class="c1"># Clone APCSP project</span>
-<span class="nb">export</span> <span class="nv">apcsp_repo</span><span class="o">=</span><span class="s2">"https://github.com/nighthawkcoders/APCSP.git"</span>  <span class="c1"># APCSP URL</span>
+<span class="n">export</span> <span class="n">home_dir</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">shaurya</span> <span class="c1"># this is only needed since there is an issue with my home dir right now</span>
+<span class="n">export</span> <span class="n">workspace_dir</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">shaurya</span><span class="o">/</span><span class="n">vscode</span>  <span class="c1"># setting project directory to /home/shaurya</span>
+<span class="n">export</span> <span class="n">apcsp</span><span class="o">=</span><span class="err">$</span><span class="n">workspace_dir</span><span class="o">/</span><span class="n">APCSP</span>  <span class="c1"># Clone APCSP project</span>
+<span class="n">export</span> <span class="n">apcsp_repo</span><span class="o">=</span><span class="s2">"https://github.com/nighthawkcoders/APCSP.git"</span>  <span class="c1"># APCSP URL</span>
 
-<span class="nb">export</span> <span class="nv">myproj</span><span class="o">=</span><span class="nv">$workspace_dir</span>/FastPagesSTG  <span class="c1"># Clone my project</span>
-<span class="nb">export</span> <span class="nv">myproj_repo</span><span class="o">=</span><span class="s2">"https://github.com/STG-7/FastPagesSTG.git"</span>  <span class="c1"># My project URL</span>
+<span class="n">export</span> <span class="n">myproj</span><span class="o">=</span><span class="err">$</span><span class="n">workspace_dir</span><span class="o">/</span><span class="n">FastPagesSTG</span>  <span class="c1"># Clone my project</span>
+<span class="n">export</span> <span class="n">myproj_repo</span><span class="o">=</span><span class="s2">"https://github.com/STG-7/FastPagesSTG.git"</span>  <span class="c1"># My project URL</span>
 
-<span class="nb">cd</span> <span class="nv">$home_dir</span>    <span class="c1"># start in home directory</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">home_dir</span>    <span class="c1"># start in home directory</span>
 
 <span class="c1"># Conditional block to make a project directory</span>
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$workspace_dir</span> <span class="o">]</span>
-<span class="k">then</span> 
-    <span class="nb">echo</span> <span class="s2">"Directory </span><span class="nv">$workspace_dir</span><span class="s2"> does not exists... Setting up empty workspace directory </span><span class="nv">$workspace_dir</span><span class="s2">"</span>
-    mkdir -p <span class="nv">$workspace_dir</span>
-<span class="k">fi</span>
-<span class="nb">echo</span> <span class="s2">"Directory </span><span class="nv">$workspace_dir</span><span class="s2"> exists."</span> 
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">workspace_dir</span> <span class="p">]</span>
+<span class="n">then</span> 
+    <span class="n">echo</span> <span class="s2">"Directory $workspace_dir does not exists... Setting up empty workspace directory $workspace_dir"</span>
+    <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="err">$</span><span class="n">workspace_dir</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">"Directory $workspace_dir exists."</span> 
 
 <span class="c1"># Conditional block to git clone a apcsp from apcsp_repo</span>
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$apcsp</span> <span class="o">]</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">"Project </span><span class="nv">$apcsp</span><span class="s2"> does not exists... cloning </span><span class="nv">$apcsp_repo</span><span class="s2">"</span>
-    <span class="nb">cd</span> <span class="nv">$workspace_dir</span>
-    git clone <span class="nv">$apcsp_repo</span>
-    <span class="nb">echo</span> <span class="s2">"Project </span><span class="nv">$apcsp</span><span class="s2"> cloned successfully."</span> 
-    <span class="nb">cd</span> <span class="nv">$home_dir</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">apcsp</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">"Project $apcsp does not exists... cloning $apcsp_repo"</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">workspace_dir</span>
+    <span class="n">git</span> <span class="n">clone</span> <span class="err">$</span><span class="n">apcsp_repo</span>
+    <span class="n">echo</span> <span class="s2">"Project $apcsp cloned successfully."</span> 
+    <span class="n">cd</span> <span class="err">$</span><span class="n">home_dir</span>
 <span class="k">else</span> 
-    <span class="nb">cd</span> <span class="nv">$apcsp</span>
-    git fetch origin
-    <span class="nb">echo</span> <span class="s2">"Project </span><span class="nv">$apcsp</span><span class="s2"> updated successfully."</span> 
-    <span class="nb">cd</span> <span class="nv">$workspace_dir</span>
-<span class="k">fi</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">apcsp</span>
+    <span class="n">git</span> <span class="n">fetch</span> <span class="n">origin</span>
+    <span class="n">echo</span> <span class="s2">"Project $apcsp updated successfully."</span> 
+    <span class="n">cd</span> <span class="err">$</span><span class="n">workspace_dir</span>
+<span class="n">fi</span>
 
 <span class="c1"># Conditional block to git clone a myproj from myproj_repo</span>
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$myproj</span> <span class="o">]</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">"Project </span><span class="nv">$myproj</span><span class="s2"> does not exists... cloning </span><span class="nv">$myproj_repo</span><span class="s2">"</span>
-    <span class="nb">cd</span> <span class="nv">$workspace_dir</span>
-    git clone <span class="nv">$myproj_repo</span>
-    <span class="nb">echo</span> <span class="s2">"Project </span><span class="nv">$myproj</span><span class="s2"> cloned successfully."</span> 
-    <span class="nb">cd</span> <span class="nv">$home_dir</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">myproj</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">"Project $myproj does not exists... cloning $myproj_repo"</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">workspace_dir</span>
+    <span class="n">git</span> <span class="n">clone</span> <span class="err">$</span><span class="n">myproj_repo</span>
+    <span class="n">echo</span> <span class="s2">"Project $myproj cloned successfully."</span> 
+    <span class="n">cd</span> <span class="err">$</span><span class="n">home_dir</span>
 <span class="k">else</span> 
-    <span class="nb">cd</span> <span class="nv">$myproj</span>
-    git fetch origin
-    <span class="nb">echo</span> <span class="s2">"Project </span><span class="nv">$myproj</span><span class="s2"> updated successfully."</span> 
-    <span class="nb">cd</span> <span class="nv">$workspace_dir</span>
-<span class="k">fi</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">myproj</span>
+    <span class="n">git</span> <span class="n">fetch</span> <span class="n">origin</span>
+    <span class="n">echo</span> <span class="s2">"Project $myproj updated successfully."</span> 
+    <span class="n">cd</span> <span class="err">$</span><span class="n">workspace_dir</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
@@ -298,43 +298,43 @@ Project /home/shaurya/vscode/FastPagesSTG updated successfully.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nv">js</span><span class="o">=</span><span class="m">0</span>
-<span class="nv">p3</span><span class="o">=</span><span class="m">0</span>
-<span class="nv">ba</span><span class="o">=</span><span class="m">0</span>
-jupyter kernelspec list <span class="p">|</span> awk <span class="s1">'{print $1}'</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> line<span class="p">;</span>
-<span class="k">do</span>
-        <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$line</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"javascript"</span> <span class="o">]</span>
-        <span class="k">then</span>
-                <span class="nv">js</span><span class="o">=</span><span class="m">1</span>
-        <span class="k">elif</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$line</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"python3"</span> <span class="o">]</span>
-        <span class="k">then</span>
-                <span class="nv">p3</span><span class="o">=</span><span class="m">1</span>
-        <span class="k">elif</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$line</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"bash"</span> <span class="o">]</span>
-        <span class="k">then</span>
-                <span class="nv">ba</span><span class="o">=</span><span class="m">1</span>
-        <span class="k">fi</span>
-<span class="k">done</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">js</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">p3</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">ba</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">awk</span> <span class="s1">'{print $1}'</span> <span class="o">|</span> <span class="k">while</span> <span class="n">read</span> <span class="n">line</span><span class="p">;</span>
+<span class="n">do</span>
+        <span class="k">if</span> <span class="p">[</span> <span class="s2">"$line"</span> <span class="o">=</span> <span class="s2">"javascript"</span> <span class="p">]</span>
+        <span class="n">then</span>
+                <span class="n">js</span><span class="o">=</span><span class="mi">1</span>
+        <span class="k">elif</span> <span class="p">[</span> <span class="s2">"$line"</span> <span class="o">=</span> <span class="s2">"python3"</span> <span class="p">]</span>
+        <span class="n">then</span>
+                <span class="n">p3</span><span class="o">=</span><span class="mi">1</span>
+        <span class="k">elif</span> <span class="p">[</span> <span class="s2">"$line"</span> <span class="o">=</span> <span class="s2">"bash"</span> <span class="p">]</span>
+        <span class="n">then</span>
+                <span class="n">ba</span><span class="o">=</span><span class="mi">1</span>
+        <span class="n">fi</span>
+<span class="n">done</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">js</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"Javascript Kernel Not Found"</span>
+<span class="k">if</span> <span class="p">[</span> <span class="n">js</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"Javascript Kernel Not Found"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"Javascript Kernel Exists"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"Javascript Kernel Exists"</span>
+<span class="n">fi</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">p3</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"Python Kernel Not Found"</span>
+<span class="k">if</span> <span class="p">[</span> <span class="n">p3</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"Python Kernel Not Found"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"Python Kernel Exists"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"Python Kernel Exists"</span>
+<span class="n">fi</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">ba</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"Bash Kernel Not Found"</span>
+<span class="k">if</span> <span class="p">[</span> <span class="n">ba</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"Bash Kernel Not Found"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"Bash Kernel Exists"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"Bash Kernel Exists"</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
@@ -386,51 +386,51 @@ Bash Kernel Exists
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nv">package_list</span><span class="o">=</span>/tmp/packagelist.txt
-<span class="k">if</span> <span class="o">[[</span> ! -f <span class="nv">$package_list</span> <span class="o">]]</span>
-<span class="k">then</span>
-        conda list -n base &gt; <span class="nv">$package_list</span>
-<span class="k">fi</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">package_list</span><span class="o">=/</span><span class="n">tmp</span><span class="o">/</span><span class="n">packagelist</span><span class="o">.</span><span class="n">txt</span>
+<span class="k">if</span> <span class="p">[[</span> <span class="err">!</span> <span class="o">-</span><span class="n">f</span> <span class="err">$</span><span class="n">package_list</span> <span class="p">]]</span>
+<span class="n">then</span>
+        <span class="n">conda</span> <span class="nb">list</span> <span class="o">-</span><span class="n">n</span> <span class="n">base</span> <span class="o">&gt;</span> <span class="err">$</span><span class="n">package_list</span>
+<span class="n">fi</span>
 
-<span class="nv">python_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "python" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$python_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"Python not installed"</span>
+<span class="n">python_ver</span><span class="o">=</span><span class="err">`</span><span class="n">awk</span> <span class="s1">'$1 == "python" { print $2 }'</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">packagelist</span><span class="o">.</span><span class="n">txt</span><span class="err">`</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="n">python_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"Python not installed"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"Python installed with version </span><span class="nv">$python_ver</span><span class="s2">"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"Python installed with version $python_ver"</span>
+<span class="n">fi</span>
 
-<span class="nv">ipykernel_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "ipykernel" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$ipykernel_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"ipykernel not installed"</span>
+<span class="n">ipykernel_ver</span><span class="o">=</span><span class="err">`</span><span class="n">awk</span> <span class="s1">'$1 == "ipykernel" { print $2 }'</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">packagelist</span><span class="o">.</span><span class="n">txt</span><span class="err">`</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="n">ipykernel_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"ipykernel not installed"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"ipykernel installed with version </span><span class="nv">$ipykernel_ver</span><span class="s2">"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"ipykernel installed with version $ipykernel_ver"</span>
+<span class="n">fi</span>
 
-<span class="nv">conda_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "conda" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$conda_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"conda not installed"</span>
+<span class="n">conda_ver</span><span class="o">=</span><span class="err">`</span><span class="n">awk</span> <span class="s1">'$1 == "conda" { print $2 }'</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">packagelist</span><span class="o">.</span><span class="n">txt</span><span class="err">`</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="n">conda_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"conda not installed"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"conda installed with version </span><span class="nv">$conda_ver</span><span class="s2">"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"conda installed with version $conda_ver"</span>
+<span class="n">fi</span>
 
-<span class="nv">bash_kernel_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "bash-kernel" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$bash_kernel_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"bash-kernel not installed"</span>
+<span class="n">bash_kernel_ver</span><span class="o">=</span><span class="err">`</span><span class="n">awk</span> <span class="s1">'$1 == "bash-kernel" { print $2 }'</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">packagelist</span><span class="o">.</span><span class="n">txt</span><span class="err">`</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="n">bash_kernel_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"bash-kernel not installed"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"bash-kernel installed with version </span><span class="nv">$bash_kernel_ver</span><span class="s2">"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"bash-kernel installed with version $bash_kernel_ver"</span>
+<span class="n">fi</span>
 
-<span class="nv">jupyter_ver</span><span class="o">=</span><span class="sb">`</span>awk <span class="s1">'$1 == "jupyter" { print $2 }'</span> /tmp/packagelist.txt<span class="sb">`</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$jupyter_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]</span>
-<span class="k">then</span>
-        <span class="nb">echo</span> <span class="s2">"jupyter not installed"</span>
+<span class="n">jupyter_ver</span><span class="o">=</span><span class="err">`</span><span class="n">awk</span> <span class="s1">'$1 == "jupyter" { print $2 }'</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">packagelist</span><span class="o">.</span><span class="n">txt</span><span class="err">`</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">$</span><span class="n">jupyter_ver</span> <span class="o">==</span> <span class="s2">""</span> <span class="p">]</span>
+<span class="n">then</span>
+        <span class="n">echo</span> <span class="s2">"jupyter not installed"</span>
 <span class="k">else</span>
-        <span class="nb">echo</span> <span class="s2">"jupyter installed with version </span><span class="nv">$jupyter_ver</span><span class="s2">"</span>
-<span class="k">fi</span>
+        <span class="n">echo</span> <span class="s2">"jupyter installed with version $jupyter_ver"</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
