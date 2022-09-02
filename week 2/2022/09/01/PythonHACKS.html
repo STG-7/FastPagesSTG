@@ -155,7 +155,7 @@ window.onload = wrap_img;
 <span class="p">}</span>
 
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s2">": "</span> <span class="nb">str</span><span class="p">(</span><span class="n">InfoDB</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span>  <span class="nb">str</span><span class="p">(</span><span class="n">InfoDB</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -169,11 +169,15 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">"&lt;ipython-input-16-9f340d63866e&gt;"</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">16</span>
-<span class="ansi-red-fg">    print(key + ": " str(InfoDB[key]))</span>
-                     ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-19-93da70ad7eaf&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span> 
+<span class="ansi-green-intense-fg ansi-bold">     15</span> <span class="ansi-green-fg">for</span> key <span class="ansi-green-fg">in</span> InfoDB<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg">         </span>printstr<span class="ansi-blue-fg">(</span>key <span class="ansi-blue-fg">+</span>  str<span class="ansi-blue-fg">(</span>InfoDB<span class="ansi-blue-fg">[</span>key<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span> 
+
+<span class="ansi-red-fg">NameError</span>: name 'printstr' is not defined</pre>
 </div>
 </div>
 
