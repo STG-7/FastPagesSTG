@@ -331,9 +331,9 @@ LastName: Goel
 DOB: October 29, 2007
 Residence: San Diego
 Email: shauryaggamer@gmail.com
-Owns Cars: ['Bugatti', 'Tesla']
+Owns Cars: ['None']
 Owns Devices: ['I-phone', 'Gaming laptop']
-Hobbies: ['Football', 'Soccer/Basketball', 'Video Games']
+Hobbies: ['Football', 'Soccer', 'Video Games']
 </pre>
 </div>
 </div>
@@ -476,9 +476,11 @@ FirstName : Shaurya
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Add a value for key:"</span><span class="p">)</span>
     <span class="n">newvalue</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="n">InfoDB</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">newkey</span><span class="p">:</span> <span class="n">newvalue</span><span class="p">})</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You added "</span> <span class="o">+</span> <span class="n">newkey</span> <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">newvalue</span><span class="p">))</span>
 
 <span class="n">AddToDB</span><span class="p">()</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here is the updated InfoDB:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">InfoDB</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
 </pre></div>
@@ -495,7 +497,17 @@ FirstName : Shaurya
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Add a key:
 Add a value for key:
-{'FirstName': 'Shaurya', 'LastName': 'Goel', 'DOB': 'October 29, 2007', 'Residence': 'San Diego', 'Email': 'shauryaggamer@gmail.com', 'Owns Cars': ['None'], 'Owns Devices': ['I-phone', 'Gaming laptop'], 'Hobbies': ['Football', 'Soccer', 'Video Games'], 'newkey': 'newvalue', 'Alternate email': 'alternateapex@gmail.com'}
+You added alternate email : shauryaalternateapex@gmail.com
+Here is the updated InfoDB:
+FirstName : Shaurya
+LastName : Goel
+DOB : October 29, 2007
+Residence : San Diego
+Email : shauryaggamer@gmail.com
+Owns Cars : ['None']
+Owns Devices : ['I-phone', 'Gaming laptop']
+Hobbies : ['Football', 'Soccer', 'Video Games']
+alternate email : shauryaalternateapex@gmail.com
 </pre>
 </div>
 </div>
@@ -528,9 +540,12 @@ Add a value for key:
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Remove a key:"</span><span class="p">)</span>
     <span class="n">removkey</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="n">InfoDB</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">removkey</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You removed "</span> <span class="o">+</span> <span class="n">removkey</span><span class="p">)</span>
+
 
 <span class="n">RemovToDB</span><span class="p">()</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here is the updated InfoDB:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">InfoDB</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
 </pre></div>
@@ -546,7 +561,16 @@ Add a value for key:
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Remove a key:
-{'FirstName': 'Shaurya', 'LastName': 'Goel', 'DOB': 'October 29, 2007', 'Residence': 'San Diego', 'Email': 'shauryaggamer@gmail.com', 'Owns Cars': ['None'], 'Owns Devices': ['I-phone', 'Gaming laptop'], 'Hobbies': ['Football', 'Soccer', 'Video Games']}
+You removed alternate email
+Here is the updated InfoDB:
+FirstName : Shaurya
+LastName : Goel
+DOB : October 29, 2007
+Residence : San Diego
+Email : shauryaggamer@gmail.com
+Owns Cars : ['None']
+Owns Devices : ['I-phone', 'Gaming laptop']
+Hobbies : ['Football', 'Soccer', 'Video Games']
 </pre>
 </div>
 </div>
