@@ -188,17 +188,9 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;table&gt;"</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;tr&gt;"</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;td&gt;"</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/td&gt;"</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;td&gt;"</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/td&gt;"</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/tr&gt;"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"&lt;/table&gt;"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="p">,</span> <span class="s2">"|"</span> <span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+  
 </pre></div>
 
     </div>
@@ -211,72 +203,14 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
-FirstName
-&lt;/td&gt;
-&lt;td&gt;
-Shaurya
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-LastName
-&lt;/td&gt;
-&lt;td&gt;
-Goel
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-DOB
-&lt;/td&gt;
-&lt;td&gt;
-October 29, 2007
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-Residence
-&lt;/td&gt;
-&lt;td&gt;
-San Diego
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-Email
-&lt;/td&gt;
-&lt;td&gt;
-shauryaggamer@gmail.com
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-Owns Cars
-&lt;/td&gt;
-&lt;td&gt;
-['None']
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-Owns Devices
-&lt;/td&gt;
-&lt;td&gt;
-['I-phone', 'Gaming laptop']
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-Hobbies
-&lt;/td&gt;
-&lt;td&gt;
-['Football', 'Soccer', 'Video Games']
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
+<pre>FirstName | Shaurya
+LastName | Goel
+DOB | October 29, 2007
+Residence | San Diego
+Email | shauryaggamer@gmail.com
+Owns Cars | ['None']
+Owns Devices | ['I-phone', 'Gaming laptop']
+Hobbies | ['Football', 'Soccer', 'Video Games']
 </pre>
 </div>
 </div>
