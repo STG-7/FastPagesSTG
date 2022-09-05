@@ -94,61 +94,6 @@
 
   
       ,"page2": {
-          "title": "Calculus",
-          "content": "Upcoming Homework/Assignments: . Coming Up Type Due Date . A7 HW | Homework | 8/29 | . A8 HW | Homework | 8/29 | . Calc Quiz | Test |   | .",
-          "url": "https://stg-7.github.io/FastPagesSTG/CALCAB/",
-          "relUrl": "/CALCAB/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page3": {
-          "title": "Chemistry",
-          "content": "Upcoming Homework/Assignments: . Coming Up Type Due Date . Lab Storyboard | Homework | 8/29 | . Lab Write-up | Homework |   | . Stoich Test | Test |   | .",
-          "url": "https://stg-7.github.io/FastPagesSTG/CHEM/",
-          "relUrl": "/CHEM/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page4": {
-          "title": "ComSci Principles",
-          "content": "Upcoming Homework/Assignments: . Coming Up Type Due Date . Canvas Week 1 | Homework | 8/29 | . Alumini Panel | Homework | 10 PM, 8/29 | . Week 1 Notes and Vocabulary: . Python: . “def” is a key word in Python that defines a function | String concatenation “+” is the operation of joining character strings end-to-end | “import” is a key word in Python that imports libraries of functions that have previously been created | an “if” expression is evaluated for true or false true takes branch of code directly under if | false takes branch of code directly under else command | . | .",
-          "url": "https://stg-7.github.io/FastPagesSTG/COMSCIPRINC/",
-          "relUrl": "/COMSCIPRINC/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page5": {
-          "title": "Environmental Science",
-          "content": "Upcoming Homework/Assignments: . Coming Up Type Due Date . Darien FB Activity | Homework | 8/29 | . Biomes Chart | Homework |   | . APES Quiz | Test |   | .",
-          "url": "https://stg-7.github.io/FastPagesSTG/ENVIRONSCI/",
-          "relUrl": "/ENVIRONSCI/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page6": {
-          "title": "Time Table",
-          "content": "Assignments: . Week Assignments . 6 |   | . 5 | Homework | . 4 | Homework | . 3 | Homework | . 2 | PythonHACKS, HTML | . 1 | AluminiPanel, BASH, PythonQuiz | . 0 | MDPost, PythonHello | . This table is used with Liquid Syntax .",
-          "url": "https://stg-7.github.io/FastPagesSTG/TIMETABLE/",
-          "relUrl": "/TIMETABLE/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page7": {
           "title": "About Me",
           "content": "Hello, my name is Shaurya Goel and I am an APCSP Student in Mr. Mortensen’s Period 4 class. .",
           "url": "https://stg-7.github.io/FastPagesSTG/about/",
@@ -161,7 +106,7 @@
   
 
   
-      ,"page9": {
+      ,"page4": {
           "title": "Notes",
           "content": "Python: . “def” is a key word in Python that defines a function | String concatenation “+” is the operation of joining character strings end-to-end | “import” is a key word in Python that imports libraries of functions that have previously been created | an “if” expression is evaluated for true or false true takes branch of code directly under if | false takes branch of code directly under else command | . | .",
           "url": "https://stg-7.github.io/FastPagesSTG/NOTES/",
@@ -182,7 +127,7 @@
   
 
   
-      ,"page14": {
+      ,"page9": {
           "title": "Vocab",
           "content": "Vocab: . pseudo code: a notation resembling a simplified programming language, used in program design. | Markdown: Markdown is a lightweight markup language for creating formatted text using a plain-text editor. | Jupytr Notebook: The Jupyter Notebook is a web-based interactive computing platform. | Python: Python is a high-level, interpreted, general-purpose programming language. | .",
           "url": "https://stg-7.github.io/FastPagesSTG/VOCAB/",
@@ -202,7 +147,7 @@
   
 
   
-      ,"page18": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://stg-7.github.io/FastPagesSTG/robots.txt",
