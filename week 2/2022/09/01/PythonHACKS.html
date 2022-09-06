@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -157,7 +157,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDB</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># defining a list called "InfoDB" </span>
+<span class="n">InfoDB</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># defining people as dictionaries that contain key-value pairs</span>
 <span class="n">Shaurya</span> <span class="o">=</span> <span class="p">{</span>
@@ -198,15 +199,46 @@ window.onload = wrap_img;
 <span class="n">InfoDB</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Shaurya</span><span class="p">)</span>
 <span class="n">InfoDB</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Tom</span><span class="p">)</span>
 <span class="n">InfoDB</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Cristiano</span><span class="p">)</span>
-
-
-
-<span class="k">def</span> <span class="nf">showValue</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">showValue</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">"&lt;ipython-input-179-f92e3732d5f0&gt;"</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">3</span>
+<span class="ansi-red-fg">    print(key + " : " + str(dic[key])</span>
+                                     ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> unexpected EOF while parsing
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -282,7 +314,7 @@ Hobbies : ['Soccer', 'Cars']
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-157-859fcfdfcec1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-174-859fcfdfcec1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-red-fg"># iteratating through every key in the dictionary</span>
 <span class="ansi-green-intense-fg ansi-bold">      5</span>     <span class="ansi-green-fg">for</span> key <span class="ansi-green-fg">in</span> x<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">----&gt; 6</span><span class="ansi-red-fg">         </span>print<span class="ansi-blue-fg">(</span>str<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">" : "</span> <span class="ansi-blue-fg">+</span> str<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">[</span>key<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
@@ -360,7 +392,24 @@ Residence : Portugal
 Email : NA
 Owns Cars : ['Rolls-Royce Cullinan', 'Ferrari F12 TDF', 'Lamborghini Aventador', 'Bugatti Centodieci', 'Maserati GranCabrio', 'Porsche 911 turbo', 'Ferrari F430']
 Hobbies : ['Soccer', 'Cars']
+
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-172-752f36649195&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      8</span>     <span class="ansi-red-fg"># printing out every key and value in the dictionary using y as the index</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     <span class="ansi-green-fg">for</span> y <span class="ansi-green-fg">in</span> range<span class="ansi-blue-fg">(</span>len<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">         </span>print<span class="ansi-blue-fg">(</span>list<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span>y<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">+</span><span class="ansi-blue-fg">" : "</span> <span class="ansi-blue-fg">+</span> str<span class="ansi-blue-fg">(</span>list<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span>y<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span> 
+
+<span class="ansi-red-fg">AttributeError</span>: 'str' object has no attribute 'values'</pre>
 </div>
 </div>
 
@@ -695,6 +744,8 @@ Lebron
 
 
 Steph
+
+Lebron
 
 Lebron
 </pre>
