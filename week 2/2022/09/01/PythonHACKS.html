@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      11 min read
     
 </span></p>
 
@@ -125,6 +125,7 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#Defining-a-List-of-Dictionaries-called-"InfoDB"">Defining a List of Dictionaries called &quot;InfoDB&quot; </a></li>
+<li class="toc-entry toc-h3"><a href="#Iteration-through-InfDB-Using-specic-keys">Iteration through InfDB Using specic keys </a></li>
 <li class="toc-entry toc-h3"><a href="#Iteration-through-InfoDB-using-"For-Loop"">Iteration through InfoDB using &quot;For Loop&quot; </a></li>
 <li class="toc-entry toc-h3"><a href="#Iteration-through-InfoDB-using-"For-Loop"-(with-Indexes)">Iteration through InfoDB using &quot;For Loop&quot; (with Indexes) </a></li>
 <li class="toc-entry toc-h3"><a href="#Iterating-through-InfoDB-using-"While-Loop"">Iterating through InfoDB using &quot;While Loop&quot; </a></li>
@@ -157,8 +158,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># defining a list called "InfoDB" </span>
-<span class="n">InfoDB</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDB</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># defining people as dictionaries that contain key-value pairs</span>
 <span class="n">Shaurya</span> <span class="o">=</span> <span class="p">{</span>
@@ -215,9 +215,47 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">showValue</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">getValue</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">showValue</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="n">getValue</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Iteration-through-InfDB-Using-specic-keys">
+<a class="anchor" href="#Iteration-through-InfDB-Using-specic-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iteration through InfDB Using specic keys<a class="anchor-link" href="#Iteration-through-InfDB-Using-specic-keys"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"FirstName"</span><span class="p">)</span>
+    <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"LastName"</span><span class="p">)</span>
+    <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"DOB"</span><span class="p">)</span>
+    <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"Email"</span><span class="p">)</span>
+    <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"Owns Cars"</span><span class="p">)</span>
+    <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"Owns Devices"</span><span class="p">)</span>
+    <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"Hobbies"</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -229,12 +267,29 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">"&lt;ipython-input-179-f92e3732d5f0&gt;"</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">3</span>
-<span class="ansi-red-fg">    print(key + " : " + str(dic[key])</span>
-                                     ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> unexpected EOF while parsing
+FirstName : Shaurya
+LastName : Goel
+DOB : October 29, 2007
+Email : shauryaggamer@gmail.com
+Owns Cars : ['None']
+Owns Devices : ['iPhone', 'Gaming laptop']
+Hobbies : ['Football', 'Soccer', 'Video Games']
+
+FirstName : Tom
+LastName : Brady
+DOB : August 3, 1977
+Email : info@brandbrady.com 
+Owns Cars : ['2017 Aston Martin DB11', '2015 Rolls Royce Ghost', '2018 Limited Edition TB12 Aston Martin Vanquish S Volante', '2015 Ferrari M458-T', '2009 Audi R8']
+Hobbies : ['Football', 'Cars']
+
+FirstName : Cristiano
+LastName : Ronaldo
+DOB : February 5, 1985
+Email : NA
+Owns Cars : ['Rolls-Royce Cullinan', 'Ferrari F12 TDF', 'Lamborghini Aventador', 'Bugatti Centodieci', 'Maserati GranCabrio', 'Porsche 911 turbo', 'Ferrari F430']
+Hobbies : ['Soccer', 'Cars']
 </pre>
 </div>
 </div>
@@ -303,23 +358,7 @@ Residence : Portugal
 Email : NA
 Owns Cars : ['Rolls-Royce Cullinan', 'Ferrari F12 TDF', 'Lamborghini Aventador', 'Bugatti Centodieci', 'Maserati GranCabrio', 'Porsche 911 turbo', 'Ferrari F430']
 Hobbies : ['Soccer', 'Cars']
-
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-174-859fcfdfcec1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-red-fg"># iteratating through every key in the dictionary</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span>     <span class="ansi-green-fg">for</span> key <span class="ansi-green-fg">in</span> x<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">----&gt; 6</span><span class="ansi-red-fg">         </span>print<span class="ansi-blue-fg">(</span>str<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">" : "</span> <span class="ansi-blue-fg">+</span> str<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">[</span>key<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: string indices must be integers</pre>
 </div>
 </div>
 
@@ -392,24 +431,7 @@ Residence : Portugal
 Email : NA
 Owns Cars : ['Rolls-Royce Cullinan', 'Ferrari F12 TDF', 'Lamborghini Aventador', 'Bugatti Centodieci', 'Maserati GranCabrio', 'Porsche 911 turbo', 'Ferrari F430']
 Hobbies : ['Soccer', 'Cars']
-
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-172-752f36649195&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span>     <span class="ansi-red-fg"># printing out every key and value in the dictionary using y as the index</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     <span class="ansi-green-fg">for</span> y <span class="ansi-green-fg">in</span> range<span class="ansi-blue-fg">(</span>len<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">         </span>print<span class="ansi-blue-fg">(</span>list<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span>y<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">+</span><span class="ansi-blue-fg">" : "</span> <span class="ansi-blue-fg">+</span> str<span class="ansi-blue-fg">(</span>list<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">.</span>values<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span>y<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span> 
-
-<span class="ansi-red-fg">AttributeError</span>: 'str' object has no attribute 'values'</pre>
 </div>
 </div>
 
@@ -665,23 +687,47 @@ FirstName : Cristiano
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">newname</span> <span class="o">=</span> <span class="s2">""</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">AddToDB</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">"Input the "</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s2">" for the Person"</span><span class="p">)</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">x</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
 
+<span class="k">def</span> <span class="nf">AddToDBList</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="n">valueList</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="kc">True</span> <span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">"Input the "</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s2">" for the Person"</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="n">valueList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Do you want to add more values for "</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s2">". Enter 'Y' for yes and 'N' for no."</span><span class="p">)</span>
+        <span class="n">check</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">check</span> <span class="o">==</span> <span class="s2">"N"</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="n">x</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">valueList</span>
 
+<span class="c1"># create a new empty dictionary</span>
+<span class="n">newdict</span> <span class="o">=</span> <span class="p">{}</span>
 
-<span class="k">def</span> <span class="nf">AddToDB</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Add a person's first name to the DataBase"</span><span class="p">)</span>
-    <span class="n">newname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="n">newdict</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">newdict</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">"FirstName"</span> <span class="p">:</span>  <span class="n">newname</span><span class="p">})</span>
-    <span class="n">InfoDB</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newdict</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"You added "</span> <span class="o">+</span> <span class="n">newname</span> <span class="o">+</span> <span class="s2">" to the database"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Add a person's first name to the DataBase"</span><span class="p">)</span>
+<span class="c1"># add first name to dictionary</span>
+<span class="n">AddToDB</span><span class="p">(</span><span class="n">newdict</span><span class="p">,</span> <span class="s2">"FirstName"</span><span class="p">)</span>
+<span class="c1"># add last name to dictionary</span>
+<span class="n">AddToDB</span><span class="p">(</span><span class="n">newdict</span><span class="p">,</span> <span class="s2">"LastName"</span><span class="p">)</span>
+<span class="c1"># add DOB to dictionary</span>
+<span class="n">AddToDB</span><span class="p">(</span><span class="n">newdict</span><span class="p">,</span> <span class="s2">"DOB"</span><span class="p">)</span>
+<span class="c1"># add Email to dictionary</span>
+<span class="n">AddToDB</span><span class="p">(</span><span class="n">newdict</span><span class="p">,</span> <span class="s2">"Email"</span><span class="p">)</span>
+<span class="c1"># add Owns Cars list to dictionary</span>
+<span class="n">AddToDBList</span><span class="p">(</span><span class="n">newdict</span><span class="p">,</span> <span class="s2">"Owns Cars"</span><span class="p">)</span>
+<span class="c1"># add Owns Devices list to dictionary</span>
+<span class="n">AddToDBList</span><span class="p">(</span><span class="n">newdict</span><span class="p">,</span> <span class="s2">"Owns Devices"</span><span class="p">)</span>
+<span class="c1"># add Hobbies list to dictionary</span>
+<span class="n">AddToDBList</span><span class="p">(</span><span class="n">newdict</span><span class="p">,</span> <span class="s2">"Hobbies"</span><span class="p">)</span>
+<span class="n">InfoDB</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newdict</span><span class="p">)</span>
 
-
-<span class="n">AddToDB</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You added "</span> <span class="o">+</span> <span class="n">newdict</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" to the database"</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"======================"</span><span class="p">)</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"FirstName"</span><span class="p">)</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"LastName"</span><span class="p">)</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"DOB"</span><span class="p">)</span>
@@ -703,51 +749,59 @@ FirstName : Cristiano
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Add a person's first name to the DataBase
+Input the FirstName for the Person
+Input the LastName for the Person
+Input the DOB for the Person
+Input the Email for the Person
+Input the Owns Cars for the Person
+Do you want to add more values for Owns Cars. Enter 'Y' for yes and 'N' for no.
+Input the Owns Cars for the Person
+Do you want to add more values for Owns Cars. Enter 'Y' for yes and 'N' for no.
+Input the Owns Cars for the Person
+Do you want to add more values for Owns Cars. Enter 'Y' for yes and 'N' for no.
+Input the Owns Cars for the Person
+Do you want to add more values for Owns Cars. Enter 'Y' for yes and 'N' for no.
+Input the Owns Devices for the Person
+Do you want to add more values for Owns Devices. Enter 'Y' for yes and 'N' for no.
+Input the Owns Devices for the Person
+Do you want to add more values for Owns Devices. Enter 'Y' for yes and 'N' for no.
+Input the Owns Devices for the Person
+Do you want to add more values for Owns Devices. Enter 'Y' for yes and 'N' for no.
+Input the Hobbies for the Person
+Do you want to add more values for Hobbies. Enter 'Y' for yes and 'N' for no.
+Input the Hobbies for the Person
+Do you want to add more values for Hobbies. Enter 'Y' for yes and 'N' for no.
 You added Lebron to the database
-
-Shaurya
-Goel
-October 29, 2007
-shauryaggamer@gmail.com
-['None']
-['iPhone', 'Gaming laptop']
-['Football', 'Soccer', 'Video Games']
-
-Tom
-Brady
-August 3, 1977
-info@brandbrady.com 
-['2017 Aston Martin DB11', '2015 Rolls Royce Ghost', '2018 Limited Edition TB12 Aston Martin Vanquish S Volante', '2015 Ferrari M458-T', '2009 Audi R8']
-['Football', 'Cars']
-
-Cristiano
-Ronaldo
-February 5, 1985
-NA
-['Rolls-Royce Cullinan', 'Ferrari F12 TDF', 'Lamborghini Aventador', 'Bugatti Centodieci', 'Maserati GranCabrio', 'Porsche 911 turbo', 'Ferrari F430']
-['Soccer', 'Cars']
-
-
-
-
-
-Lebron
-
-
-
-
-
-Lebron
-
-Lebron
-
-
-
-Steph
-
-Lebron
-
-Lebron
+======================
+FirstName : Shaurya
+LastName : Goel
+DOB : October 29, 2007
+Email : shauryaggamer@gmail.com
+Owns Cars : ['None']
+Owns Devices : ['iPhone', 'Gaming laptop']
+Hobbies : ['Football', 'Soccer', 'Video Games']
+======================
+FirstName : Tom
+LastName : Brady
+DOB : August 3, 1977
+Email : info@brandbrady.com 
+Owns Cars : ['2017 Aston Martin DB11', '2015 Rolls Royce Ghost', '2018 Limited Edition TB12 Aston Martin Vanquish S Volante', '2015 Ferrari M458-T', '2009 Audi R8']
+Hobbies : ['Football', 'Cars']
+======================
+FirstName : Cristiano
+LastName : Ronaldo
+DOB : February 5, 1985
+Email : NA
+Owns Cars : ['Rolls-Royce Cullinan', 'Ferrari F12 TDF', 'Lamborghini Aventador', 'Bugatti Centodieci', 'Maserati GranCabrio', 'Porsche 911 turbo', 'Ferrari F430']
+Hobbies : ['Soccer', 'Cars']
+======================
+FirstName : Lebron
+LastName : James
+DOB : December 30, 1984
+Email : NA
+Owns Cars : ['Ferrari F430 Spyder', 'Porsche 918 Spyder', 'Lamborghini Aventador Roadster', 'Bentley Continental GT']
+Owns Devices : ['Iphone', 'Airpods', 'Tablet']
+Hobbies : ['Basketball', 'Cars']
 </pre>
 </div>
 </div>
@@ -774,13 +828,16 @@ Lebron
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">removname</span> <span class="o">=</span> <span class="s2">""</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">removename</span> <span class="o">=</span> <span class="s2">""</span>
 
 <span class="k">def</span> <span class="nf">RemovToDB</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Remove a person from the database:"</span><span class="p">)</span>
-    <span class="n">removkey</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="n">InfoDB</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">removname</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"You removed "</span> <span class="o">+</span> <span class="n">removkey</span> <span class="o">+</span> <span class="s2">" from the databse"</span><span class="p">)</span>
+    <span class="n">removename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">"FirstName"</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">getValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">"FirstName"</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">(</span><span class="n">removename</span><span class="p">):</span>
+                <span class="n">InfoDB</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You removed "</span> <span class="o">+</span> <span class="n">removename</span> <span class="o">+</span> <span class="s2">" from the databse"</span><span class="p">)</span>
 
 
 <span class="n">RemovToDB</span><span class="p">()</span>
@@ -807,32 +864,32 @@ Lebron
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Remove a key:
+<pre>Remove a person from the database:
+You removed Lebron from the databse
+Here is the updated InfoDB:
+
+FirstName : Shaurya
+LastName : Goel
+DOB : October 29, 2007
+Email : shauryaggamer@gmail.com
+Owns Cars : ['None']
+Owns Devices : ['iPhone', 'Gaming laptop']
+Hobbies : ['Football', 'Soccer', 'Video Games']
+
+FirstName : Tom
+LastName : Brady
+DOB : August 3, 1977
+Email : info@brandbrady.com 
+Owns Cars : ['2017 Aston Martin DB11', '2015 Rolls Royce Ghost', '2018 Limited Edition TB12 Aston Martin Vanquish S Volante', '2015 Ferrari M458-T', '2009 Audi R8']
+Hobbies : ['Football', 'Cars']
+
+FirstName : Cristiano
+LastName : Ronaldo
+DOB : February 5, 1985
+Email : NA
+Owns Cars : ['Rolls-Royce Cullinan', 'Ferrari F12 TDF', 'Lamborghini Aventador', 'Bugatti Centodieci', 'Maserati GranCabrio', 'Porsche 911 turbo', 'Ferrari F430']
+Hobbies : ['Soccer', 'Cars']
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-170-f6b5fa49c263&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> 
-<span class="ansi-green-intense-fg ansi-bold">      9</span> 
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg"> </span>RemovToDB<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span> 
-<span class="ansi-green-intense-fg ansi-bold">     12</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Here is the updated InfoDB:"</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-170-f6b5fa49c263&gt;</span> in <span class="ansi-cyan-fg">RemovToDB</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Remove a key:"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span>     removkey <span class="ansi-blue-fg">=</span> input<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 6</span><span class="ansi-red-fg">     </span>InfoDB<span class="ansi-blue-fg">.</span>remove<span class="ansi-blue-fg">(</span>removname<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"You removed "</span> <span class="ansi-blue-fg">+</span> removkey <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">" from the databse"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> 
-
-<span class="ansi-red-fg">ValueError</span>: list.remove(x): x not in list</pre>
 </div>
 </div>
 
