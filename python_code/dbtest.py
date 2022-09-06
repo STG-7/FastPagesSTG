@@ -1,3 +1,5 @@
+from IPython.core.display import display, HTML
+
 InfoDB = []
 Shaurya = {
 # These records are of String type
@@ -8,7 +10,6 @@ Shaurya = {
 "Email": "shauryaggamer@gmail.com",
 
 # These records are of lists type
-"Owns Cars": ["None"],
 "Owns Devices": ["iPhone", "Gaming laptop"],
 "Hobbies": ["Football", "Soccer", "Video Games"]
 }
@@ -30,27 +31,24 @@ TomB = {
 InfoDB.append(Shaurya)
 InfoDB.append(TomB)
 
-print("Iterating using key / value")
+def showValue(dic, key):
+    if (key in dic):
+        display(HTML ("<td>" + str(dic[key]) + "</td>"))
+    else:
+        display(HTML ("<td> </td>"))
 
-# iterate over the list of items in InfoDB list
+# printing using specific keys, check if the key exists, otherwise don't print
+display(HTML('<table>'))
 for x in InfoDB:
     # iterate over the dictionary key - values in the items within the list (InfoDB)
-    for key in x:
-        print(str(key) + " : " + str(x[key]))
+    display(HTML('<tr>'))
+    showValue(x,"FirstName")
+    showValue(x,"LastName")
+    showValue(x,"DOB")
+    showValue(x,"Email")
+    showValue(x,"Owns Cars")
+    showValue(x,"Owns Devices")
+    showValue(x,"Hobbies")    
+    display(HTML('</tr>'))
 
-
-
-print("iterting using index")
-# x is an integer variable
-# len(InfoDB) returns length of InfoDB as an integer
-# range command returns a sequence of numbers, starting from 0 by default and ends (in this case) with the length of InfoDB
-for x in range(len(InfoDB)):
-    # getting the dictionary stored at index position x. Naming it item
-    item = InfoDB[x]
-    # printing out every key and value in the dictionary using y as the index
-    for y in range(len(item)):
-        print(list(item)[y] +" : " + str(list(item.values())[y]))
-
-print ("iterating using while")
-
-# printing out every key and value in the dictionary using x as the index
+display(HTML('</table>'))
