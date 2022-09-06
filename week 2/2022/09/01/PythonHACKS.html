@@ -126,7 +126,7 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#Defining-a-List-of-Dictionaries-called-"InfoDB"">Defining a List of Dictionaries called &quot;InfoDB&quot; </a></li>
 <li class="toc-entry toc-h3"><a href="#Iteration-through-InfoDB-using-"For-Loop"">Iteration through InfoDB using &quot;For Loop&quot; </a></li>
-<li class="toc-entry toc-h1"><a href="#hello">Hello</a>
+<li class="toc-entry toc-h1"><a href="#hello-world">Hello, world!</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Iteration-through-InfoDB-using-"For-Loop"-(with-Indexes)">Iteration through InfoDB using &quot;For Loop&quot; (with Indexes) </a></li>
 <li class="toc-entry toc-h3"><a href="#Iterating-through-InfoDB-using-"While-Loop"">Iterating through InfoDB using &quot;While Loop&quot; </a></li>
@@ -227,10 +227,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
-
-<span class="c1"># iterating through every dictionary in list InfoDB</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">()</span>
     <span class="c1"># iteratating through every key in the dictionary</span>
     <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
@@ -239,18 +236,13 @@ window.onload = wrap_img;
 
 <span class="k">def</span> <span class="nf">showValue</span><span class="p">(</span><span class="n">dic</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">):</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span> <span class="p">(</span><span class="s1">'&lt;td&gt;'</span><span class="p">))</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">])))</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span> <span class="p">(</span><span class="s1">'&lt;/td&gt;'</span><span class="p">))</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">display</span><span class="p">(</span><span class="n">HTML</span> <span class="p">(</span><span class="s1">'&lt;td&gt; &lt;/td&gt;'</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
 
 <span class="c1"># printing using specific keys, check if the key exists, otherwise don't print</span>
 
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;table&gt;'</span><span class="p">))</span>
+
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">InfoDB</span><span class="p">:</span>
     <span class="c1"># iterate over the dictionary key - values in the items within the list (InfoDB)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;tr&gt;'</span><span class="p">))</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"FirstName"</span><span class="p">)</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"LastName"</span><span class="p">)</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"DOB"</span><span class="p">)</span>
@@ -258,9 +250,6 @@ window.onload = wrap_img;
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"Owns Cars"</span><span class="p">)</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"Owns Devices"</span><span class="p">)</span>
     <span class="n">showValue</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">"Hobbies"</span><span class="p">)</span>    
-    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;/tr&gt;'</span><span class="p">))</span>
-
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;/table&gt;'</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -307,7 +296,41 @@ Hobbies : ['Soccer', 'Cars']
 
 <div class="output_html rendered_html output_subarea ">
 <h1>
-<a class="anchor" href="#hello" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hello</h1>
+<a class="anchor" href="#hello-world" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hello, world!</h1>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Here's a link:
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<a href="http://www.google.com" target="_blank">www.google.com</a>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>some more printed text ...
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<p>Paragraph text here ...</p>
 </div>
 
 </div>
