@@ -1,8 +1,8 @@
 ---
 toc: true
 layout: post
-description: Create Task Introduction
+description: Takeways from Yale video and HACKS
 categories: [Week 4]
-title: Create Task Introduction
+title: Focus and Habits HACKS
 comments: true
 --- 
