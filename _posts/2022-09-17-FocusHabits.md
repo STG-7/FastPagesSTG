@@ -6,3 +6,10 @@ categories: [Week 4]
 title: Focus and Habits HACKS
 comments: true
 --- 
+
+### Note of Gratitude
+
+### Gratitude List
+
+
+### Goals
