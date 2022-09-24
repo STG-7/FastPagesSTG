@@ -116,6 +116,17 @@
 
   
       ,"page1": {
+          "title": "Submenu",
+          "content": "Dropdown button Action Another action Something else here",
+          "url": "https://stg-7.github.io/FastPagesSTG/submenu/",
+          "relUrl": "/submenu/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "Hello, my name is Shaurya Goel and I am an APCSP Student in Mr. Mortensen’s Period 4 class. .",
           "url": "https://stg-7.github.io/FastPagesSTG/about/",
@@ -147,7 +158,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://stg-7.github.io/FastPagesSTG/robots.txt",
