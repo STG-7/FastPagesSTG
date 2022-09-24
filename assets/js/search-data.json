@@ -139,7 +139,7 @@
   
       ,"page1": {
           "title": "Submenu",
-          "content": "&lt;!DOCTYPE html&gt; . . Hoverable Dropdown . Move the mouse over the button to open the dropdown menu. . Dropdown Link 1 Link 2 Link 3 .",
+          "content": "&lt;!DOCTYPE html&gt; . . Hoverable Dropdown . Move the mouse over the button to open the dropdown menu. . Dropdown Link 1 Link 2 .",
           "url": "https://stg-7.github.io/FastPagesSTG/submenu/",
           "relUrl": "/submenu/",
           "date": ""
