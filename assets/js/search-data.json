@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "AP Prep Multiple Choice",
+            "content": "All College Board MCQs (100%) . .",
+            "url": "https://stg-7.github.io/FastPagesSTG/week%206/2022/09/27/mcq.html",
+            "relUrl": "/week%206/2022/09/27/mcq.html",
+            "date": " • Sep 27, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Using HTML fragments and JavaScript data to build a table",
             "content": "Defining a dictionary with data . var dict = { ScrumLeader: &quot;Shaurya Goel&quot;, BackendDeveloper: &quot;Alex Lu&quot;, FrontendDeveloper: &quot;Haseeb Beg&quot;, FrontendDeveloper2: &quot;Tirth Thakar&quot;, DevOps: &quot;Evan Apari&quot;, }; . Pritning out Data in an HTML Table . function createTable(data){ var table = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Member&lt;/th&gt;&lt;/tr&gt;&quot; var keys = Object.keys(data); for(var index in keys){ const key = keys[index]; const value = dict[key]; table += &quot;&lt;tr&gt;&lt;td&gt;&quot;+key+&quot;&lt;/td&gt;&lt;td&gt;&quot;+value+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;; } table += &quot;&lt;/table&gt;&quot;; return table; } $$.html(createTable(dict)); . RoleMember . ScrumLeader | Shaurya Goel | . BackendDeveloper | Alex Lu | . FrontendDeveloper | Haseeb Beg | . FrontendDeveloper2 | Tirth Thakar | . DevOps | Evan Apari | .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%205/2022/09/26/JSJN2.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Usage of Jupyter JavaScript kernel",
             "content": "Usage of Jupyter JavaScript Kernel . Printing &quot;Hello World&quot; . console.log(&quot;Hello World&quot;) . Hello World . Printing &quot;Hello World&quot; with Encapsulation . msg = &quot;Hello World&quot; console.log(msg) . Hello World . Function that multiplies two numbers . function myFunction(a, b) { return a * b; } myFunction(659,8999956) . 5930971004 . Function that checks if a number is even or odd . function NumType(x){ if (x % 2 == 0) { console.log(x + &quot; is an even number&quot;); } else { console.log(x + &quot; is an odd number&quot;); } } NumType(35) . 35 is an odd number . JavaScript Data that will be used for the HTML Post . var dict = { ScrumLeader: &quot;Shaurya Goel&quot;, BackendDeveloper: &quot;Alex Lu&quot;, FrontendDeveloper: &quot;Haseeb Beg&quot;, FrontendDeveloper2: &quot;Tirth Thakar&quot;, DevOps: &quot;Evan Apari&quot;, }; console.log(dict) . { ScrumLeader: &#39;Shaurya Goel&#39;, BackendDeveloper: &#39;Alex Lu&#39;, FrontendDeveloper: &#39;Haseeb Beg&#39;, FrontendDeveloper2: &#39;Tirth Thakar&#39;, DevOps: &#39;Evan Apari&#39; } .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%205/2022/09/24/OK.html",
@@ -23,23 +34,12 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Python Lists and Dictionaries HACKS",
             "content": "",
             "url": "https://stg-7.github.io/FastPagesSTG/week%205/2022/09/24/JSJN.html",
             "relUrl": "/week%205/2022/09/24/JSJN.html",
             "date": " • Sep 24, 2022"
-        }
-        
-    
-  
-    
-        ,"post3": {
-            "title": "Focus and Habits HACKS",
-            "content": "Note of Gratitude . Gratitude List . Goals .",
-            "url": "https://stg-7.github.io/FastPagesSTG/week%204/2022/09/17/FocusHabits.html",
-            "relUrl": "/week%204/2022/09/17/FocusHabits.html",
-            "date": " • Sep 17, 2022"
         }
         
     
