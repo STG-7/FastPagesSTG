@@ -13,8 +13,8 @@
   
     
         ,"post1": {
-            "title": "Python Lists and Dictionaries HACKS",
-            "content": "",
+            "title": "Usage of Jupyter JavaScript kernel",
+            "content": "Usage of Jupyter JavaScript kernel . Printing &quot;Hello World&quot; . console.log(&quot;Hello World&quot;) . Hello World . Printing &quot;Hello World&quot; with Encapsulation . msg = &quot;Hello World&quot; console.log(msg) . Hello World . Function that multiplies two numbers . function myFunction(a, b) { return a * b; } myFunction(659,8999956) . 5930971004 . Function that checks if a number is even or odd . function NumType(x){ if (x % 2 == 0) { console.log(x + &quot; is an even number&quot;); } else { console.log(x + &quot; is an odd number&quot;); } } NumType(35) . 35 is an odd number .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%205/2022/09/24/JSJN.html",
             "relUrl": "/week%205/2022/09/24/JSJN.html",
             "date": " • Sep 24, 2022"
