@@ -179,9 +179,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define an HTML conversion "method" associated with GrouGroup.prototype._toHtml = function() {</span>
-    <span class="c1">// HTML Style is build using inline structure</span>
-    <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
       <span class="s2">"display:inline-block;"</span> <span class="o">+</span>
       <span class="s2">"border: 2px solid grey;"</span> <span class="o">+</span>
       <span class="s2">"box-shadow: 0.8em 0.4em 0.4em grey;"</span>
@@ -195,17 +193,13 @@ window.onload = wrap_img;
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Name"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;/tr&gt;"</span><span class="p">;</span>
     <span class="c1">// Data of Array, iterate through each row of delnorte.group </span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">dict</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// tr for each row, a new line</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
-      <span class="c1">// td for each column of data</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">favcolor</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">age</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">role</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="c1">// tr to end line</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">key</span> <span class="k">of</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">dict</span><span class="p">))</span> <span class="p">{</span>
+      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">key</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">dict</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+   
+     
+  <span class="p">}</span>
+
   
      <span class="c1">// Build and HTML fragment of div, table, table body</span>
     <span class="k">return</span> <span class="p">(</span>
@@ -216,7 +210,6 @@ window.onload = wrap_img;
       <span class="s2">"&lt;/div&gt;"</span>
     <span class="p">);</span>
   
-  <span class="p">};</span>
   
   <span class="c1">// IJavaScript HTML processor receive parameter of defined HTML fragment</span>
   <span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">delnorte</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
@@ -233,21 +226,21 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_text output_error">
 <pre>
-evalmachine.&lt;anonymous&gt;:2
-Group.prototype._toHtml = function() {
-^
+evalmachine.&lt;anonymous&gt;:25
+    return (
+    ^^^^^^
 
-ReferenceError: Group is not defined
-    at evalmachine.&lt;anonymous&gt;:2:1
-    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
-    at Object.runInThisContext (vm.js:97:38)
+SyntaxError: Illegal return statement
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
     at run ([eval]:1020:15)
     at onRunRequest ([eval]:864:18)
     at onMessage ([eval]:828:13)
     at emitTwo (events.js:106:13)
     at process.emit (events.js:191:7)
     at process.nextTick (internal/child_process.js:758:12)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)</pre>
 </div>
 </div>
 
