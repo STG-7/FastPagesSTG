@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "Usage of Jupyter JavaScript kernel",
-            "content": "Defining a dictionary with data . var dict = { ScrumLeader: &quot;Shaurya Goel&quot;, BackendDeveloper: &quot;Alex Lu&quot;, FrontendDeveloper: &quot;Haseeb Beg&quot;, FrontendDeveloper2: &quot;Tirth Thakar&quot;, DevOps: &quot;Evan Apari&quot;, }; . var style = ( &quot;display:inline-block;&quot; + &quot;border: 2px solid grey;&quot; + &quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot; ); // HTML Body of Table is build as a series of concatenations (+=) var body = &quot;&quot;; // Heading for Array Columns body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Postition&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Name&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;/tr&gt;&quot;; // Data of Array, iterate through each row of delnorte.group for (const key of Object.keys(dict)) { body += &quot;&lt;td&gt;&quot; + key + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + dict[key] + &quot;&lt;/td&gt;&quot;; } // Build and HTML fragment of div, table, table body return ( &quot;&lt;div style=&#39;&quot; + style + &quot;&#39;&gt;&quot; + &quot;&lt;table&gt;&quot; + body + &quot;&lt;/table&gt;&quot; + &quot;&lt;/div&gt;&quot; ); // IJavaScript HTML processor receive parameter of defined HTML fragment $$.html(delnorte._toHtml()); . evalmachine.&lt;anonymous&gt;:25 return ( ^^^^^^ SyntaxError: Illegal return statement at createScript (vm.js:56:10) at Object.runInThisContext (vm.js:97:10) at run ([eval]:1020:15) at onRunRequest ([eval]:864:18) at onMessage ([eval]:828:13) at emitTwo (events.js:106:13) at process.emit (events.js:191:7) at process.nextTick (internal/child_process.js:758:12) at _combinedTickCallback (internal/process/next_tick.js:73:7) at process._tickCallback (internal/process/next_tick.js:104:9) .",
+            "title": "Using HTML fragments and JavaScript data to build a table",
+            "content": "Defining a dictionary with data . var dict = { ScrumLeader: &quot;Shaurya Goel&quot;, BackendDeveloper: &quot;Alex Lu&quot;, FrontendDeveloper: &quot;Haseeb Beg&quot;, FrontendDeveloper2: &quot;Tirth Thakar&quot;, DevOps: &quot;Evan Apari&quot;, }; . Pritning out Data in an HTML Table .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%205/2022/09/26/JSJN2.html",
             "relUrl": "/week%205/2022/09/26/JSJN2.html",
             "date": " • Sep 26, 2022"
@@ -13,8 +13,8 @@
   
     
         ,"post1": {
-            "title": "Python Lists and Dictionaries HACKS",
-            "content": "",
+            "title": "Usage of Jupyter JavaScript kernel",
+            "content": "Usage of Jupyter JavaScript kernel . Printing &quot;Hello World&quot; . console.log(&quot;Hello World&quot;) . Hello World . Printing &quot;Hello World&quot; with Encapsulation . msg = &quot;Hello World&quot; console.log(msg) . Hello World . Function that multiplies two numbers . function myFunction(a, b) { return a * b; } myFunction(659,8999956) . 5930971004 . Function that checks if a number is even or odd . function NumType(x){ if (x % 2 == 0) { console.log(x + &quot; is an even number&quot;); } else { console.log(x + &quot; is an odd number&quot;); } } NumType(35) . 35 is an odd number . JavaScript Data that will be used for the HTML Post . var dict = { ScrumLeader: &quot;Shaurya Goel&quot;, BackendDeveloper: &quot;Alex Lu&quot;, FrontendDeveloper: &quot;Haseeb Beg&quot;, FrontendDeveloper2: &quot;Tirth Thakar&quot;, DevOps: &quot;Evan Apari&quot;, }; console.log(dict) . { ScrumLeader: &#39;Shaurya Goel&#39;, BackendDeveloper: &#39;Alex Lu&#39;, FrontendDeveloper: &#39;Haseeb Beg&#39;, FrontendDeveloper2: &#39;Tirth Thakar&#39;, DevOps: &#39;Evan Apari&#39; } .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%205/2022/09/24/JSJN.html",
             "relUrl": "/week%205/2022/09/24/JSJN.html",
             "date": " • Sep 24, 2022"
