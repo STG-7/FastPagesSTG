@@ -167,12 +167,12 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">dict</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nx">ScrumLeader</span><span class="o">:</span> <span class="s2">"Shaurya Goel"</span><span class="p">,</span>
-    <span class="nx">BackendDeveloper</span><span class="o">:</span> <span class="s2">"Alex Lu"</span><span class="p">,</span>
-    <span class="nx">FrontendDeveloper</span><span class="o">:</span> <span class="s2">"Haseeb Beg"</span><span class="p">,</span>
-    <span class="nx">FrontendDeveloper2</span><span class="o">:</span> <span class="s2">"Tirth Thakar"</span><span class="p">,</span>
-    <span class="nx">DevOps</span><span class="o">:</span> <span class="s2">"Evan Apari"</span><span class="p">,</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">var</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">ScrumLeader</span><span class="p">:</span> <span class="s2">"Shaurya Goel"</span><span class="p">,</span>
+    <span class="n">BackendDeveloper</span><span class="p">:</span> <span class="s2">"Alex Lu"</span><span class="p">,</span>
+    <span class="n">FrontendDeveloper</span><span class="p">:</span> <span class="s2">"Haseeb Beg"</span><span class="p">,</span>
+    <span class="n">FrontendDeveloper2</span><span class="p">:</span> <span class="s2">"Tirth Thakar"</span><span class="p">,</span>
+    <span class="n">DevOps</span><span class="p">:</span> <span class="s2">"Evan Apari"</span><span class="p">,</span>
  <span class="p">};</span>
 </pre></div>
 
@@ -199,21 +199,21 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">createTable</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
-    <span class="kd">var</span> <span class="nx">table</span> <span class="o">=</span> <span class="s2">"&lt;table&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Member&lt;/th&gt;&lt;/tr&gt;"</span>
-    <span class="kd">var</span> <span class="nx">keys</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">function</span> <span class="n">createTable</span><span class="p">(</span><span class="n">data</span><span class="p">){</span>
+    <span class="n">var</span> <span class="n">table</span> <span class="o">=</span> <span class="s2">"&lt;table&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Member&lt;/th&gt;&lt;/tr&gt;"</span>
+    <span class="n">var</span> <span class="n">keys</span> <span class="o">=</span> <span class="n">Object</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
 
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">index</span> <span class="k">in</span> <span class="nx">keys</span><span class="p">){</span>
-        <span class="kr">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">keys</span><span class="p">[</span><span class="nx">index</span><span class="p">];</span>
-        <span class="kr">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">dict</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
-        <span class="nx">table</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;&lt;td&gt;"</span><span class="o">+</span><span class="nx">key</span><span class="o">+</span><span class="s2">"&lt;/td&gt;&lt;td&gt;"</span><span class="o">+</span><span class="nx">value</span><span class="o">+</span><span class="s2">"&lt;/td&gt;&lt;/tr&gt;"</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">var</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">){</span>
+        <span class="n">const</span> <span class="n">key</span> <span class="o">=</span> <span class="n">keys</span><span class="p">[</span><span class="n">index</span><span class="p">];</span>
+        <span class="n">const</span> <span class="n">value</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">[</span><span class="n">key</span><span class="p">];</span>
+        <span class="n">table</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;&lt;td&gt;"</span><span class="o">+</span><span class="n">key</span><span class="o">+</span><span class="s2">"&lt;/td&gt;&lt;td&gt;"</span><span class="o">+</span><span class="n">value</span><span class="o">+</span><span class="s2">"&lt;/td&gt;&lt;/tr&gt;"</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="nx">table</span> <span class="o">+=</span> <span class="s2">"&lt;/table&gt;"</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nx">table</span><span class="p">;</span>
+    <span class="n">table</span> <span class="o">+=</span> <span class="s2">"&lt;/table&gt;"</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">table</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">createTable</span><span class="p">(</span><span class="nx">dict</span><span class="p">));</span>
+<span class="err">$$</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="n">createTable</span><span class="p">(</span><span class="nb">dict</span><span class="p">));</span>
 </pre></div>
 
     </div>
