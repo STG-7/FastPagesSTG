@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Correcting Errors Challenge (Burger, Fries, and Drink)",
-            "content": "menu = {&quot;Burger&quot;: 3.99, &quot;Fries&quot;: 1.99, &quot;Drink&quot;: 0.99} total = 0 print(&quot;Full Menu&quot;) for k,v in menu.items(): print(k + &quot; : $&quot; + str(v)) order = True while order: item = input(&quot;Please select your items from the menu, click escape when you are done&quot;) if item in menu.keys(): total+= menu[item] else: order = False print(&quot;Total Cost : $&quot; + str(total)) print(&quot;Have a nice day!&quot;) . Full Menu Burger : $3.99 Fries : $1.99 Drink : $0.99 Total Cost : $7.970000000000001 Have a nice day! .",
+            "content": "menu = {&quot;Burger&quot;: 3.99, &quot;Fries&quot;: 1.99, &quot;Drink&quot;: 0.99} total = 0 print(&quot;Full Menu&quot;) for k,v in menu.items(): print(k + &quot; : $&quot; + str(v)) order = True while order: item = input(&quot;Please select your items from the menu, click escape when you are done&quot;) if item in menu.keys(): total+= menu[item] else: order = False print(&quot;Total Cost : $&quot; + str(total)) print(&quot;Have a nice day!&quot;) . Full Menu Burger : $3.99 Fries : $1.99 Drink : $0.99 Total Cost : $5.98 Have a nice day! .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%207/2022/10/03/AP-error_testing.html",
             "relUrl": "/week%207/2022/10/03/AP-error_testing.html",
             "date": " • Oct 3, 2022"
