@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "API Test HACKS",
-            "content": "import requests url = &quot;http://www.randomnumberapi.com/api/v1.0/random?min=0&amp;max=200&amp;count=20&quot; response = requests.request(&quot;GET&quot;, url) print(response.text) . [104, 41, 56, 28, 1, 43, 59, 113, 100, 191, 31, 164, 49, 155, 94, 108, 184, 127, 58, 99] .",
+            "content": "Using the Random number API . This random number API can be used for the minesweeper final project that our group is creating Link on How to Use Api on Gitub | . import requests url = &quot;http://www.randomnumberapi.com/api/v1.0/random?min=0&amp;max=200&amp;count=20&quot; response = requests.request(&quot;GET&quot;, url) print(response.text) . [104, 41, 56, 28, 1, 43, 59, 113, 100, 191, 31, 164, 49, 155, 94, 108, 184, 127, 58, 99] .",
             "url": "https://stg-7.github.io/FastPagesSTG/week%207/2022/10/10/apitest.html",
             "relUrl": "/week%207/2022/10/10/apitest.html",
             "date": " • Oct 10, 2022"
