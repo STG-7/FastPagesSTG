@@ -16,7 +16,9 @@ comments: true
 ### Program Function
 
 - Function is similar to that of a minesweeper game [Minesweeper](https://www.google.com/search?q=minesweeper+game&rlz=1C1CHBD_enUS930US930&oq=minesweeper+game&aqs=chrome..69i57.1801j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on)
-Using the sqlite3 library on python to store user names and each user’s corresponding information, such as high-score
+
+Order:
 1. User will click on a coordinate in the "game grid"
-2. If the coordinate is a "safe square", then it and the surrounding "safe squares" will also be "flagged:
-3. If the coordinate is a mine, then the game ends, revealing all of the mines as well C
+2. If the coordinate is a "safe square", then it and the surrounding "safe squares" will also be "flagged":
+3. If the coordinate is a mine, then the game ends, revealing all of the mines 
+4. Top score will be saved using python lists
