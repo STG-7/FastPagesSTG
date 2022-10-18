@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Script for First Check Video",
-            "content": "Program Purpose . An online single-player minesweeper game that can be played anywhere, anytime | Users could choose to store data such as high scores (minimum number of moves or time) if they wish. | . Program Function . Function is similar to that of a minesweeper game Minesweeper Using the sqlite3 library on python to store user names and each user’s corresponding information, such as high-score User will click on a coordinate in the “game grid” | If the coordinate is a “safe square”, then it and the surrounding “safe squares” will also be “flagged: | If the coordinate is a mine, then the game ends, revealing all of the mines as well C | | .",
+            "content": "Program Purpose . An online single-player minesweeper game that can be played anywhere, anytime | Users could choose to store data such as high scores (minimum number of moves or time) if they wish. | . Program Function . Function is similar to that of a minesweeper game Minesweeper | . Order: . User will click on a coordinate in the “game grid” | If the coordinate is a “safe square”, then it and the surrounding “safe squares” will also be “flagged”: | If the coordinate is a mine, then the game ends, revealing all of the mines | Top score will be saved using python lists |",
             "url": "https://stg-7.github.io/FastPagesSTG/week%209/2022/10/18/FirstPrez.html",
             "relUrl": "/week%209/2022/10/18/FirstPrez.html",
             "date": " • Oct 18, 2022"
