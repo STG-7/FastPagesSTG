@@ -12,8 +12,9 @@ comments: true
 
 <img class="card-img-top" src="/FastPagesSTG/images/ScoreOverview.png" alt="Score Overview" height="350">
 
-Test Corrections:
-Question 35:
+# Test Corrections:
+
+### Question 35:
 Documentation for procedure with a loop:
 In the following procedure, the parameter max is a positive integer.
 
@@ -23,13 +24,13 @@ Which of the following is the most appropriate documentation to appear with the 
 
 Correct answer: B, Prints all positive odd integers that are less than or equal to max. The loop terminates when count exceeds max, so only values less than or equal to max are printed.
 
-Question 17:
+### Question 17:
 Purpose of Internet protocols:
 Which of the following is a primary reason for the use of open protocols on the Internet?
 
 Correct answer: D, Open protocols provide a way to standardize data transmission between different devices. Protocols are agreed-upon sets of rules that specify the behavior of a system. Protocols used on the Internet enable devices from different manufacturers to communicate in a standard way.
 
-Question 43:
+### Question 43:
 Value of x after REPEAT UNTIL block:
 Consider the following code segment.
 
@@ -50,5 +51,6 @@ What are the values of count1 and count2 as a result of executing the code segme
 
 Correct answer: B, The code segment iterates through each element in the list, incrementing count1 for each positive value and incrementing count2 otherwise. The list contains two positive values, so count1 is 2 and count2 is 3.
 
-Reflection:
-Overall, the test went pretty well. I did increase my understanding of the Collegeboard pseudo-code since the last quiz. However, there are still gaps in my understanding. For one, I had to mostly guess the questions on bits, and I did have to communicate with our group with members that had not completeted the assessment at the time of collaberation to understand the concepts involved. One key thing I learned was how sensors pull at multiple intervals per second measured in Hz.
+
+# Final Reflection:
+Overall, the assessment went very well. Since the last quiz, you have a better understanding of the Collegeboard pseudocode. However, there are still gaps in my understanding. For one thing, I had to guess most questions about Bits and communicate with a group of members who hadn't completed their assessment at the time of the collaboration to understand the concepts involved. One of the key things I learned was how the sensor pulls at multiple intervals per second of her measured in Hz.
