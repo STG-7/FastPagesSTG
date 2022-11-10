@@ -8,10 +8,12 @@ comments: true
 --- 
 
 
+# Test Score
+
 <img class="card-img-top" src="/FastPagesSTG/images/ScoreOverview.png" alt="Score Overview" height="350">
 
 Test Corrections:
-Question 6:
+Question 35:
 Documentation for procedure with a loop:
 In the following procedure, the parameter max is a positive integer.
 
