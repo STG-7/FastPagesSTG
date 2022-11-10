@@ -1,8 +1,8 @@
 ---
 toc: true
 layout: post
-description: Week 9
-categories: [Week 9]
-title: Script for First Check Video
+description: Week 12
+categories: [Week 12]
+title: Final College Board MC Blogging
 comments: true
 --- 
