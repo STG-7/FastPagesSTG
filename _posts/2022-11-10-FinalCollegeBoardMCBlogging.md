@@ -40,7 +40,7 @@ What is the value of result after the code segment is executed?
 
 Correct answer: C, The variables x and result are initialized to 0. Inside the loop, result is increased by x and x is increased by 1. The loop terminates when x exceeds 5. Therefore, result is assigned the sum of the integers from 0 to 5, or 15.
 
-Question 45:
+### Question 45:
 Values of counts after traversing theList:
 Consider the following code segment.
 
