@@ -267,6 +267,17 @@
     
         ,"post24": {
             "title": "Binary Math",
+            "content": "Hacks . Hack #1 . Decimal: . Hexadecimal: . Octal: . . Binary: . Hack #2 . Color code: rgb() . Hex: . Hack #3 . . Enter arbitrary base (2-36): . Base-N format: .",
+            "url": "https://stg-7.github.io/FastPagesSTG/frontend/binary",
+            "relUrl": "/frontend/binary",
+            "date": " • Jul 7, 2022"
+        }
+        
+    
+  
+    
+        ,"post25": {
+            "title": "Binary Math",
             "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . . .",
             "url": "https://stg-7.github.io/FastPagesSTG/frontend/binary",
             "relUrl": "/frontend/binary",
