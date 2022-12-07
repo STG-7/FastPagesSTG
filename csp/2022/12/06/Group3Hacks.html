@@ -153,16 +153,16 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">newlist</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Defining new list</span>
-<span class="n">interval</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1"># Another variable to store highest index</span>
+<span class="n">newlist</span> <span class="o">=</span> <span class="p">[]</span> 
+<span class="n">interval</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> 
 
-<span class="c1"># for loop, goes through all items</span>
+
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
     <span class="n">i</span> <span class="o">=</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="n">newlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="n">interval</span> <span class="o">-</span> <span class="n">i</span><span class="p">])</span> <span class="c1"># appends all numbers backwards</span>
+    <span class="n">newlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="n">interval</span> <span class="o">-</span> <span class="n">i</span><span class="p">])</span> 
 
 <span class="nb">print</span><span class="p">(</span><span class="n">newlist</span><span class="p">)</span>
-<span class="c1"># Using commands to reverse</span>
+
 <span class="nb">list</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
 </pre></div>
@@ -207,16 +207,16 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 
-<span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span> <span class="c1"># function</span>
-    <span class="n">has_swapped</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># check if the list has been swapped</span>
+<span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span> 
+    <span class="n">has_swapped</span> <span class="o">=</span> <span class="kc">True</span> 
     <span class="k">while</span><span class="p">(</span><span class="n">has_swapped</span><span class="p">):</span>
         <span class="n">has_swapped</span> <span class="o">=</span> <span class="kc">False</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span> <span class="c1"># checks every value</span>
-            <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span> <span class="c1"># checks if the current value is larger than the next one</span>
-                <span class="n">holder</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1"># temporary var</span>
-                <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># transferring values</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span> 
+            <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span> 
+                <span class="n">holder</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> 
+                <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> 
                 <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">holder</span>
-                <span class="n">has_swapped</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># List has been swapped</span>
+                <span class="n">has_swapped</span> <span class="o">=</span> <span class="kc">True</span> 
     <span class="k">return</span> <span class="n">numbers</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">bubble_sort</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span>
