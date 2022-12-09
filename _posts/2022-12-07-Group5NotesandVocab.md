@@ -32,3 +32,7 @@ Binary Search (Efficient search): repeats the process of finding a median and ev
 Boolean Expressions: expression that evaluates to either true or false
 Truth Tables: displays the logical operations on input signals in a table format, identifies all possible input combinations and the output for each
 
+
+# 3.11 Binary and Sequential Search
+
+
