@@ -6,7 +6,7 @@ categories: [markdown]
 title: Group 5 Notes and Vocab
 ---
 
-# 3.9 Algorithms
+# 3.9 Algorithms and 3.11 3.11 Binary and Sequential Search
 
 ### Essential Knowledge
 
@@ -31,8 +31,3 @@ Sequential Search (Inefficient search): compare each number to the number you wa
 Binary Search (Efficient search): repeats the process of finding a median and evaluating
 Boolean Expressions: expression that evaluates to either true or false
 Truth Tables: displays the logical operations on input signals in a table format, identifies all possible input combinations and the output for each
-
-
-# 3.11 Binary and Sequential Search
-
-
