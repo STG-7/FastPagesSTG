@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Binary Search in Python HACK (Extra Credit)",
-            "content": "lst = [1,2,3,4,5,6] lst.reverse() def binarySearch(lst, toFind): min = 0 max = len(lst)-1 reversed = False if lst[min] &gt; lst[max]: lst.reverse() reversed = True print(&quot;reversed&quot;) while True: ind = int(round((min+max)/2)) mid = lst[ind] print(mid) if mid == toFind: if reversed: lst.reverse() return else: if mid &lt; toFind: min = ind else: max = ind print(&quot;searching for 5&quot;) binarySearch(lst, 5) print(&quot;searching for 1&quot;) binarySearch(lst, 1) .",
+            "content": "List = [1,2,3,4,5,6] List.reverse() def binarySearch(List, toFind): min = 0 max = len(List)-1 reversed = False if List[min] &gt; List[max]: List.reverse() reversed = True print(&quot;reversed&quot;) while True: ind = int(round((min+max)/2)) mid = List[ind] print(mid) if mid == toFind: if reversed: List.reverse() return else: if mid &lt; toFind: min = ind else: max = ind print(&quot;searching for 5&quot;) binarySearch(List, 5) print(&quot;searching for 1&quot;) binarySearch(List, 1) .",
             "url": "https://stg-7.github.io/FastPagesSTG/2022/12/10/Group5ExtraCredit1.html",
             "relUrl": "/2022/12/10/Group5ExtraCredit1.html",
             "date": " • Dec 10, 2022"

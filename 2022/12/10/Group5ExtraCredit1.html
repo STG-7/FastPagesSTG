@@ -133,24 +133,24 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
-<span class="n">lst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">toFind</span><span class="p">):</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">List</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">List</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="n">List</span><span class="p">,</span> <span class="n">toFind</span><span class="p">):</span>
     <span class="nb">min</span> <span class="o">=</span> <span class="mi">0</span> 
-    <span class="nb">max</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span> 
+    <span class="nb">max</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">List</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span> 
     <span class="nb">reversed</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="nb">min</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">lst</span><span class="p">[</span><span class="nb">max</span><span class="p">]:</span>
-        <span class="n">lst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">List</span><span class="p">[</span><span class="nb">min</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">max</span><span class="p">]:</span>
+        <span class="n">List</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
         <span class="nb">reversed</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"reversed"</span><span class="p">)</span>
       
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">ind</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">((</span><span class="nb">min</span><span class="o">+</span><span class="nb">max</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> 
-        <span class="n">mid</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span> 
+        <span class="n">mid</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span> 
         <span class="nb">print</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">mid</span> <span class="o">==</span> <span class="n">toFind</span><span class="p">:</span> 
             <span class="k">if</span> <span class="nb">reversed</span><span class="p">:</span>
-                <span class="n">lst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+                <span class="n">List</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
             <span class="k">return</span> 
         <span class="k">else</span><span class="p">:</span> 
             <span class="k">if</span> <span class="n">mid</span> <span class="o">&lt;</span> <span class="n">toFind</span><span class="p">:</span> 
@@ -158,9 +158,9 @@ window.onload = wrap_img;
             <span class="k">else</span><span class="p">:</span> 
                 <span class="nb">max</span> <span class="o">=</span> <span class="n">ind</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"searching for 5"</span><span class="p">)</span>
-<span class="n">binarySearch</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">binarySearch</span><span class="p">(</span><span class="n">List</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"searching for 1"</span><span class="p">)</span>
-<span class="n">binarySearch</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">binarySearch</span><span class="p">(</span><span class="n">List</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
