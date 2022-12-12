@@ -24,7 +24,6 @@ If X < K [MIDDLE]
 then HIGH ← MIDDLE – 1
 else If X > K [MIDDLE]
  then LOW ← MIDDLE + 1
-
 elseWrite(‘SUCCESSFULSEARCH’)
  Return (MIDDLE)
 5. [Unsuccessful search)
