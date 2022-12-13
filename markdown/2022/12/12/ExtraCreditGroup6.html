@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -98,7 +98,31 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#11-background">1.1 Background</a></li>
 <li class="toc-entry toc-h1"><a href="#12-environment">1.2 Environment</a></li>
-</ul><p><strong>Remote procedure calls (RPC) appear to be a useful paradig m for providing communication across a network between programs written in a high-level language.</strong></p>
+</ul><p><strong>Remote procedure call is the synchronous language-level transfer of control between programs disjoint address spaces whose primary communication medium is a narrow channel. The thesis of this dissertation is that remote procedure call (RPC) is a satisfactory and efficient programming language primitive for constructing distributed systems. A survey of existing remote procedure mechanisms shows that past RPC efforts are weak in addressing the five crucial issues: uniform call semantics, binding and configuration, strong typechecking, parameter functionality, and concurrency and exception control. The body of the dissertation elaborates these issues and defines a set of corresponding essential properties for RPC mechanisms. These properties must be satisfied by any RPC mechanism that is fully and uniformly integrated into a programming language for a homogeneous distributed system.</strong></p>
+
+<p><strong>Uniform integration is necessary to meet the dissertation’s fundamental goal of syntactic and semantic transparency for local and remote procedures. Transparency is important so that programmers need not concern themselves with the physical distribution of their programs. In addition to these essential language properties, a number of pleasant properties are introduced that ease the work of distributed programming. These pleasant properties are good performance, sound remote interface design, atomic transactions, respect for autonomy, type translation, and remote debugging.</strong></p>
+
+<p>With the essential and pleasant properties broadly explored, the detailed design of an RPC
+mechanism that satisfies all of the essential properties and the performance property is presented.
+Two design approaches are used: The first assumes full programming language support and involves
+changes to the language’s compiler and binder. The second involves no language changes, but uses
+a separate translator-a source-to-source RPC compiler-to implement the same functionality.
+Design decisions crucial to the efficiency of the mechanism are made using a set of RPC
+perfonnance lessons. These lessons are based on the empirical performance evaluation of a
+sequence of five working RPC mechanisms. each one faster than its predecessor. Some expected
+results about the costs of parameter copying. process switching, and runtime type manipulation are
+confinned; a surprising result about the price of protocol layering is presented as well. These
+performance lessons, applied in concert, reduce the roundtrip time for a remote procedure call by a
+remarkable factor of 35. For moderate speed personal computers communicating over an Ethernet,
+for example, a simple remote can takes 800 microseconds; on a higher speed personal computer, the
+same remote call takes 149 microseconds. In both cases the remote call takes about 20 times longer
+than the same local call. This represents a substantial performance improvement over other
+operational RPC mechanisms.
+Key words and phrases: communication primitives, computer networks, distributed computing,
+interprocess communication, message passing, naming and binding, procedure call, programming
+languages, protocols, remote procedure call, software performance evaluation.</p>
+
+<p><strong>Remote procedure calls (RPC) appear to be a useful paradig m for providing communication across a network between programs written in a high-level language.</strong></p>
 
 <h1 id="11-background">
 <a class="anchor" href="#11-background" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.1 Background</h1>
