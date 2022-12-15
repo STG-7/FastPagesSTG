@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -193,7 +193,7 @@ A. random.item</li>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
 
 <span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Give me everybody's names, seperated by a comma."</span><span class="p">)</span>
 <span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
@@ -239,15 +239,29 @@ A. random.item</li>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
 
-<span class="n">namesList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Safin"</span><span class="p">,</span><span class="s2">"Aarav"</span><span class="p">,</span><span class="s2">"Boomin"</span><span class="p">,</span><span class="s2">"G"</span><span class="p">,</span><span class="s2">"Navan"</span><span class="p">,</span><span class="s2">"Shaurya"</span><span class="p">,</span><span class="s2">"Justin"</span><span class="p">,</span><span class="s2">"Theo"</span><span class="p">,</span><span class="s2">"James"</span><span class="p">,</span><span class="s2">"Mihir"</span><span class="p">,</span><span class="s2">"Aryan"</span><span class="p">,</span><span class="s2">"Karthik"</span><span class="p">,</span><span class="s2">"Rohan"</span><span class="p">,</span><span class="s2">"Rohit"</span><span class="p">,</span><span class="s2">"Zach"</span><span class="p">]</span>
+<span class="n">namesList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Nikhil"</span><span class="p">,</span><span class="s2">"Shivansh"</span><span class="p">,</span><span class="s2">"Top G"</span><span class="p">,</span><span class="s2">"Top Top G"</span><span class="p">,</span><span class="s2">"Navan"</span><span class="p">,</span><span class="s2">"Me"</span><span class="p">,</span><span class="s2">"Justin"</span><span class="p">,</span><span class="s2">"Theo"</span><span class="p">,</span><span class="s2">"James"</span><span class="p">,</span><span class="s2">"Hunter"</span><span class="p">,</span><span class="s2">"Pranav"</span><span class="p">,</span><span class="s2">"Mihir"</span><span class="p">,</span><span class="s2">"LMAO"</span><span class="p">,</span><span class="s2">"Shindi"</span><span class="p">,</span><span class="s2">"Zach"</span><span class="p">]</span>
 
 <span class="n">sample_namesList</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">namesList</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># here, k = number of items to select</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"you got these 5 random names: </span><span class="si">{</span><span class="n">sample_namesList</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>you got these 5 random names: ['Zach', 'Theo', 'Shindi', 'Top Top G', 'Navan']
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -261,7 +275,7 @@ A. random.item</li>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
 
 <span class="n">player1</span><span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">player1t2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
@@ -286,6 +300,22 @@ A. random.item</li>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Player 1 landed on a 4 and 1 adding up to: 5
+Player 2 landed on a 5 and 1 adding up to: 6
+Player 2 is the winner.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -298,6 +328,63 @@ A. random.item</li>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">directions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"up"</span><span class="p">,</span> <span class="s2">"down"</span><span class="p">,</span> <span class="s2">"left"</span><span class="p">,</span> <span class="s2">"right"</span><span class="p">]</span>
+
+<span class="n">start_move</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">directions</span><span class="p">)</span>
+<span class="n">start_point</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+<span class="n">end_point</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You are starting in this direction: "</span> <span class="o">+</span> <span class="n">start_move</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will start at this block number: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">start_point</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your mission if you choose to accept it is to make it to this block: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">end_point</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The obstacles are in the following areas: "</span><span class="p">)</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="n">obstacle</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">obstacle</span><span class="p">))</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You are starting in this direction: left
+You will start at this block number: 5
+Your mission if you choose to accept it is to make it to this block: 23
+The obstacles are in the following areas: 
+24
+24
+7
+7
+25
+2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
