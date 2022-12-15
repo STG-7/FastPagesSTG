@@ -6,6 +6,11 @@ categories: [markdown]
 title: Extra Credit Group 6
 ---
 
+# Reflection 
+
+
+# Research Off Harvard
+
 **Remote procedure call is the synchronous language-level transfer of control between programs disjoint address spaces whose primary communication medium is a narrow channel. The thesis of this dissertation is that remote procedure call (RPC) is a satisfactory and efficient programming language primitive for constructing distributed systems. A survey of existing remote procedure mechanisms shows that past RPC efforts are weak in addressing the five crucial issues: uniform call semantics, binding and configuration, strong typechecking, parameter functionality, and concurrency and exception control. The body of the dissertation elaborates these issues and defines a set of corresponding essential properties for RPC mechanisms. These properties must be satisfied by any RPC mechanism that is fully and uniformly integrated into a programming language for a homogeneous distributed system.** 
 
 **Uniform integration is necessary to meet the dissertation's fundamental goal of syntactic and semantic transparency for local and remote procedures. Transparency is important so that programmers need not concern themselves with the physical distribution of their programs. In addition to these essential language properties, a number of pleasant properties are introduced that ease the work of distributed programming. These pleasant properties are good performance, sound remote interface design, atomic transactions, respect for autonomy, type translation, and remote debugging.**
