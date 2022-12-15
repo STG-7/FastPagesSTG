@@ -6,8 +6,20 @@ categories: [markdown]
 title: Extra Credit Group 6
 ---
 
-# Reflection 
 
+# Vocab
+Method/Function/Procedure - A set of code that can be run as a package, that takes in parameters and returns a return value
+Example: add(1, 2), which adds two numbers
+Catch all terms for a set of code
+Parameter - Input values for procedures # Vocab Section 13
+Procedure: is a named group of programming instructions that serves a purpose
+Parameter: are input values of a procedure ^ There are two types of procedures, one that returns a value or some type of data and on that just executes a block of statements (void)
+Modularity - the practice of breaking a complex program into smaller, independent parts or modules that can be used and reused in different parts of the program
+
+# Notes:
+Make your names descriptive! 
+Make your program into smaller independent modules that can be used multiple times
+Utilize update functions and recursive
 
 # Research Off Harvard
 
