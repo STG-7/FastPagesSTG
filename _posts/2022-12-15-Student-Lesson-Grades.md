@@ -6,7 +6,7 @@ title: Student Lesson Grades - Shaurya Goel
 ---
 
 |Lesson|Grades|
-|3.1 & 3.2|0.975/1|
+|3.1 & 3.2|1.0/1.0 |
 |3.3 & 3.4|0.925/1 |
 |3.5 - 3.7|0.85/1|
 |3.8 & 3.10|0.9/1|
