@@ -14,4 +14,4 @@ title: Student Lesson Grades - Shaurya Goel
 |3.12 & 3.13|0.94/1.0|
 |3.14 & 3.15|1.0/1.0|	
 |3.16| 1.0/1.0 |
-|3.17 & 3.18|Our Group|
+|3.17 & 3.18|Our Group, Presentation: 3.6/4, Grading: NA/3 |
