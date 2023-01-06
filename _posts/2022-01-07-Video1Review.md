@@ -15,4 +15,4 @@ side lengths and a table of trigonometric values.
 
 # Program Purpose and Funtion
 
-Ths Program has a clear purpose and function. The purpose being to  
+Ths Program has a clear purpose and function. The purpose being to   
